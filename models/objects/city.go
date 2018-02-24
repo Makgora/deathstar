@@ -1,8 +1,6 @@
-package cities
+package objects
 
 import (
-	. "DeathStar/models/countries"
-	. "DeathStar/models/districts"
 	"DeathStar/models/tools"
 	"fmt"
 )
@@ -10,11 +8,11 @@ import (
 type City struct {
 	cityId    string
 	name      string
-	country   Country
+	country   *Country
 	districts []District
 }
 
-func NewCity(name string, country Country) City {
+func NewCity(name string, country *Country) City {
 	newCity := City{tools.GenerateId("CI"), name, country, make([]District, 0)}
 	return newCity
 }
@@ -28,7 +26,7 @@ func (c *City) GetName() string {
 }
 
 func (c *City) GetCountry() *Country {
-	return &c.country
+	return c.country
 }
 
 func (c *City) GetDistricts() []District {
@@ -40,15 +38,15 @@ func (c *City) SetName(newName string) {
 }
 
 func (c *City) SetCountry(newCountry *Country) {
-	c.country = *newCountry
+	c.country = newCountry
 }
 
 func (c City) String() string {
 	return fmt.Sprintf("[ID]: '%s' | [Name]: '%s' | [Country]: '%s'", c.cityId, c.name, c.country.GetName())
 }
 
-func (c *City) AddDistrict(newDistrict District) {
-	c.districts = append(c.districts, newDistrict)
+func (c *City) AddDistrict(newDistrict *District) {
+	c.districts = append(c.districts, *newDistrict)
 }
 
 func (c *City) DelDistrict(district District) {

@@ -1,7 +1,6 @@
-package countries
+package objects
 
 import (
-	. "DeathStar/models/cities"
 	"DeathStar/models/tools"
 	"fmt"
 )
@@ -37,8 +36,8 @@ func (c Country) String() string {
 	return fmt.Sprintf("[ID]: '%s' | [Name]: '%s'", c.countryId, c.name)
 }
 
-func (c *Country) AddCity(newCity City) {
-	c.cities = append(c.cities, newCity)
+func (c *Country) AddCity(newCity *City) {
+	c.cities = append(c.cities, *newCity)
 }
 
 func (c *Country) DelCity(city City) {

@@ -1,8 +1,7 @@
-package cars_tests_test
+package objects_tests
 
 import (
-	. "DeathStar/models/cars"
-	. "DeathStar/models/users"
+	. "DeathStar/models/objects"
 	"testing"
 )
 
@@ -10,7 +9,7 @@ func TestNewCar(t *testing.T) {
 	name := "nameTest"
 	user := NewUser("userTest")
 
-	car := NewCar(name, user)
+	car := NewCar(name, &user)
 
 	if car.GetName() != name {
 		t.Error("Wrong name ! Expected ", name, " got ", car.GetName())
@@ -19,20 +18,21 @@ func TestNewCar(t *testing.T) {
 	}
 }
 
-func TestSetters(t *testing.T) {
+func TestCarSetters(t *testing.T) {
 	user := NewUser("userTest")
 
-	car := NewCar("testName", user)
+	car := NewCar("testName", &user)
 
 	t.Run("SetName", func(t *testing.T) {
 		car.SetName("newName")
-		if car.GetName() != "SetName" {
+		if car.GetName() != "newName" {
 			t.Error("Wrong name ! Expected newName got ", car.GetName())
 		}
 	})
 	t.Run("SetUser", func(t *testing.T) {
-		car.SetUser(NewUser("newUserTest"))
-		if car.GetUser().GetName() != newUserName {
+		newUser := NewUser("newUserTest")
+		car.SetUser(&newUser)
+		if car.GetUser().GetName() != "newUserTest" {
 			t.Error("Wrong User ! Expected newUserTest got ", car.GetUser().GetName())
 		}
 	})

@@ -1,26 +1,20 @@
-package parkings_tests
+package objects_tests
 
 import (
-	. "DeathStar/models/cars"
-	. "DeathStar/models/cities"
-	. "DeathStar/models/countries"
-	. "DeathStar/models/districts"
-	. "DeathStar/models/owners"
-	. "DeathStar/models/parkings"
-	"fmt"
+	. "DeathStar/models/objects"
 	"testing"
 )
 
 func TestNewParking(t *testing.T) {
 	country := NewCountry("")
-	city := NewCity("", country)
+	city := NewCity("", &country)
 
 	name := "nameTest"
 	owner := NewOwner("")
-	district := NewDistrict("", city)
+	district := NewDistrict("", &city)
 	spacesCount := 100
 
-	parking := NewParking(name, owner, district, spacesCount)
+	parking := NewParking(name, &owner, &district, spacesCount)
 	if parking.GetName() != name {
 		t.Error("Wrong name ! Expected ", name, " got ", parking.GetName())
 	}
@@ -47,16 +41,16 @@ func TestNewParking(t *testing.T) {
 	}
 }
 
-func TestSetters(t *testing.T) {
+func TestParkingSetters(t *testing.T) {
 	country := NewCountry("")
-	city := NewCity("", country)
+	city := NewCity("", &country)
 
 	name := "nameTest"
 	owner := NewOwner("")
-	district := NewDistrict("", city)
+	district := NewDistrict("", &city)
 	spacesCount := 100
 
-	parking := NewParking(name, owner, district, spacesCount)
+	parking := NewParking(name, &owner, &district, spacesCount)
 	t.Run("SetName", func(t *testing.T) {
 		newName := "newNameTest"
 		parking.SetName(newName)
@@ -72,7 +66,7 @@ func TestSetters(t *testing.T) {
 		}
 	})
 	t.Run("SetDistrict", func(t *testing.T) {
-		newDistrict := NewDistrict("", city)
+		newDistrict := NewDistrict("", &city)
 		parking.SetDistrict(&newDistrict)
 		if parking.GetDistrict().GetDistrictId() != newDistrict.GetDistrictId() {
 			t.Error("Wrong district ! Expected ", newDistrict.GetDistrictId(), " got ", parking.GetDistrict().GetDistrictId())

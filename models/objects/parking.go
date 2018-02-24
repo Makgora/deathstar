@@ -1,8 +1,6 @@
-package parkings
+package objects
 
 import (
-	. "DeathStar/models/districts"
-	. "DeathStar/models/owners"
 	"DeathStar/models/tools"
 	"fmt"
 )
@@ -10,8 +8,8 @@ import (
 type Parking struct {
 	parkingId         string
 	name              string
-	owner             Owner
-	district          District
+	owner             *Owner
+	district          *District
 	spacesCount       int
 	freeSpacesCount   int
 	occSpacesCount    int
@@ -19,7 +17,7 @@ type Parking struct {
 	dayOccSpacesCount int
 }
 
-func NewParking(name string, owner Owner, district District, spacesCount int) Parking {
+func NewParking(name string, owner *Owner, district *District, spacesCount int) Parking {
 	newParking := Parking{tools.GenerateId("PA"), name, owner, district, spacesCount, 0, 0, 0, 0}
 	return newParking
 }
@@ -33,11 +31,11 @@ func (p *Parking) GetName() string {
 }
 
 func (p *Parking) GetOwner() *Owner {
-	return &p.owner
+	return p.owner
 }
 
 func (p *Parking) GetDistrict() *District {
-	return &p.district
+	return p.district
 }
 
 func (p *Parking) GetSpacesCount() int {
@@ -65,11 +63,11 @@ func (p *Parking) SetName(newName string) {
 }
 
 func (p *Parking) SetOwner(newOwner *Owner) {
-	p.owner = *newOwner
+	p.owner = newOwner
 }
 
 func (p *Parking) SetDistrict(newDistrict *District) {
-	p.district = *newDistrict
+	p.district = newDistrict
 }
 
 func (p *Parking) SetSpacesCount(newSpacesCount int) {

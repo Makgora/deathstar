@@ -1,7 +1,6 @@
-package users
+package objects
 
 import (
-	. "DeathStar/models/cars"
 	"fmt"
 	"DeathStar/models/tools"
 )
@@ -36,8 +35,8 @@ func (u User) String() string {
 	return fmt.Sprintf("[ID]: '%s' | [Name]: '%s'", u.userId, u.name)
 }
 
-func (u *User) AddCar(newCar Car) {
-	u.cars = append(u.cars, newCar)
+func (u *User) AddCar(newCar *Car) {
+	u.cars = append(u.cars, *newCar)
 }
 
 func (u *User) DelCar(car Car) {

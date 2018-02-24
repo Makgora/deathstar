@@ -1,9 +1,7 @@
-package countries_tests
+package objects_tests
 
 import (
-	. "DeathStar/models/cities"
-	. "DeathStar/models/countries"
-	"fmt"
+	. "DeathStar/models/objects"
 	"testing"
 )
 
@@ -16,7 +14,7 @@ func TestNewCountry(t *testing.T) {
 	}
 }
 
-func TestSetters(t *testing.T) {
+func TestCountrySetters(t *testing.T) {
 	country := NewCountry("")
 
 	t.Run("SetName", func(t *testing.T) {
@@ -28,24 +26,24 @@ func TestSetters(t *testing.T) {
 	})
 }
 
-func TestAddCity(t *testing.T) {
+func TestCountryAddCity(t *testing.T) {
 	country := NewCountry("")
 
 	if len(country.GetCities()) != 0 {
 		t.Error("Wrong cities number ! Expected 0 got ", len(country.GetCities()))
 	}
-	newCity := NewCity("", country)
-	country.AddCity(newCity)
+	newCity := NewCity("", &country)
+	country.AddCity(&newCity)
 	if len(country.GetCities()) != 1 {
 		t.Error("Wrong cities number ! Expected 1 got ", len(country.GetCities()))
 	}
 }
 
-func TestDelCity(t *testing.T) {
+func TestCountryDelCity(t *testing.T) {
 	country := NewCountry("")
-	newCity := NewCity("", country)
+	newCity := NewCity("", &country)
 
-	country.AddCity(newCity)
+	country.AddCity(&newCity)
 	if len(country.GetCities()) != 1 {
 		t.Error("Wrong cities number ! Expected 1 got ", len(country.GetCities()))
 	}

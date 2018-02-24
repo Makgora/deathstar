@@ -1,8 +1,6 @@
-package districts
+package objects
 
 import (
-	. "DeathStar/models/cities"
-	. "DeathStar/models/parkings"
 	"DeathStar/models/tools"
 	"fmt"
 )
@@ -10,11 +8,11 @@ import (
 type District struct {
 	districtId string
 	name       string
-	city       City
+	city       *City
 	parkings []Parking
 }
 
-func NewDistrict(name string, city City) District {
+func NewDistrict(name string, city *City) District {
 	newDistrict := District{tools.GenerateId("DI"), name, city, make([]Parking, 0)}
 	return newDistrict
 }
@@ -28,7 +26,7 @@ func (d *District) GetName() string {
 }
 
 func (d *District) GetCity() *City {
-	return &d.city
+	return d.city
 }
 
 func (d *District) GetParkings() []Parking {
@@ -40,15 +38,15 @@ func (d *District) SetName(newName string) {
 }
 
 func (d *District) SetCity(newCity *City) {
-	d.city = *newCity
+	d.city = newCity
 }
 
 func (d District) String() string {
 	return fmt.Sprintf("[ID]: '%s' | [Name]: '%s' | [City]: '%s'", d.districtId, d.name, d.city.GetName())
 }
 
-func (d *District) AddParking(newParking Parking) {
-	d.parkings = append(d.parkings, newParking)
+func (d *District) AddParking(newParking *Parking) {
+	d.parkings = append(d.parkings, *newParking)
 }
 
 func (d *District) DelParking(parking Parking) {

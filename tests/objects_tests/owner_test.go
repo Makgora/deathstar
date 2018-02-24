@@ -1,11 +1,7 @@
-package owners_tests
+package objects_tests
 
 import (
-	. "DeathStar/models/cities"
-	. "DeathStar/models/countries"
-	. "DeathStar/models/districts"
-	. "DeathStar/models/owners"
-	. "DeathStar/models/parkings"
+	. "DeathStar/models/objects"
 	"testing"
 )
 
@@ -18,7 +14,7 @@ func TestNewOwner(t *testing.T) {
 	}
 }
 
-func TestSetters(t *testing.T) {
+func TestOwnerSetters(t *testing.T) {
 	owner := NewOwner("nameTest")
 	t.Run("SetName", func(t *testing.T) {
 		newNameTest := "newNameTest"
@@ -29,29 +25,29 @@ func TestSetters(t *testing.T) {
 	})
 }
 
-func TestAddParking(t *testing.T) {
+func TestOwnerAddParking(t *testing.T) {
 	owner := NewOwner("")
 	if len(owner.GetParkings()) != 0 {
 		t.Error("Wrong parkings number ! Expected 0 got ", len(owner.GetParkings()))
 	}
 	country := NewCountry("")
-	city := NewCity("", country)
-	district := NewDistrict("", city)
-	newParking := NewParking("", owner, district, 0)
-	owner.AddParking(newParking)
+	city := NewCity("", &country)
+	district := NewDistrict("", &city)
+	newParking := NewParking("", &owner, &district, 0)
+	owner.AddParking(&newParking)
 	if len(owner.GetParkings()) != 1 {
 		t.Error("Wrong parkings number ! Expected 1 got ", len(owner.GetParkings()))
 	}
 }
 
-func TestDelParking(t *testing.T) {
+func TestOwnerDelParking(t *testing.T) {
 	owner := NewOwner("")
 	country := NewCountry("")
-	city := NewCity("", country)
-	district := NewDistrict("", city)
-	newParking := NewParking("", owner, district, 0)
+	city := NewCity("", &country)
+	district := NewDistrict("", &city)
+	newParking := NewParking("", &owner, &district, 0)
 
-	owner.AddParking(newParking)
+	owner.AddParking(&newParking)
 	if len(owner.GetParkings()) != 1 {
 		t.Error("Wrong parkings number ! Expected 1 got ", len(owner.GetParkings()))
 	}

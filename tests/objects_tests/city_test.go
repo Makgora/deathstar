@@ -1,9 +1,7 @@
-package cities_tests_test
+package objects_tests
 
 import (
-	. "DeathStar/models/cities"
-	. "DeathStar/models/countries"
-	. "DeathStar/models/districts"
+	. "DeathStar/models/objects"
 	"testing"
 )
 
@@ -11,7 +9,7 @@ func TestNewCity(t *testing.T) {
 	name := "cityTest"
 	country := NewCountry("countryTest")
 
-	city := NewCity(name, country)
+	city := NewCity(name, &country)
 
 	if city.GetName() != name {
 		t.Error("Wrong name ! Expected ", name, " got ", city.GetName())
@@ -20,9 +18,9 @@ func TestNewCity(t *testing.T) {
 	}
 }
 
-func TestSetters(t *testing.T) {
+func TestCitySetters(t *testing.T) {
 	country := NewCountry("testCountry")
-	city := NewCity("nameTest", country)
+	city := NewCity("nameTest", &country)
 
 	t.Run("SetName", func(t *testing.T) {
 		newNameTest := "newNameTest"
@@ -40,26 +38,26 @@ func TestSetters(t *testing.T) {
 	})
 }
 
-func TestAddDistrict(t *testing.T) {
+func TestCityAddDistrict(t *testing.T) {
 	country := NewCountry("")
-	city := NewCity("", country)
+	city := NewCity("", &country)
 
 	if len(city.GetDistricts()) != 0 {
 		t.Error("Wrong district number ! Expected 0 got ", len(city.GetDistricts()))
 	}
-	newDistrict := NewDistrict("", city)
-	city.AddDistrict(newDistrict)
+	newDistrict := NewDistrict("", &city)
+	city.AddDistrict(&newDistrict)
 	if len(city.GetDistricts()) != 1 {
 		t.Error("Wrong district number ! Expected 1 got ", len(city.GetDistricts()))
 	}
 }
 
-func TestDelDistrict(t *testing.T) {
+func TestCityDelDistrict(t *testing.T) {
 	country := NewCountry("")
-	city := NewCity("", country)
+	city := NewCity("", &country)
 
-	newDistrict := NewDistrict("", city)
-	city.AddDistrict(newDistrict)
+	newDistrict := NewDistrict("", &city)
+	city.AddDistrict(&newDistrict)
 	if len(city.GetDistricts()) != 1 {
 		t.Error("Wrong district number ! Expected 1 got ", len(city.GetDistricts()))
 	}

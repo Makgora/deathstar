@@ -1,8 +1,6 @@
-package owners
+package objects
 
 import (
-	. "DeathStar/models/cars"
-	. "DeathStar/models/parkings"
 	"DeathStar/models/tools"
 	"fmt"
 )
@@ -35,11 +33,11 @@ func (o *Owner) SetName(newName string) {
 }
 
 func (o Owner) String() string {
-	return fmt.Sprintf("[ID]: '%s' | [Name]: '%s' | [Car]: '%v'", o.ownerID, o.name, o.car)
+	return fmt.Sprintf("[ID]: '%s' | [Name]: '%s'", o.ownerID, o.name)
 }
 
-func (o *Owner) AddParking(newParking Parking) {
-	o.parkings = append(o.parkings, newParking)
+func (o *Owner) AddParking(newParking *Parking) {
+	o.parkings = append(o.parkings, *newParking)
 }
 
 func (o *Owner) DelParking(parking Parking) {
