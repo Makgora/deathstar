@@ -24,8 +24,8 @@ func (o *Owner) GetName() string {
 	return o.name
 }
 
-func (o *Owner) GetParkings() []Parking {
-	return o.parkings
+func (o *Owner) GetParkings() *[]Parking {
+	return &o.parkings
 }
 
 func (o *Owner) SetName(newName string) {

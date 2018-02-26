@@ -29,8 +29,8 @@ func (c *City) GetCountry() *Country {
 	return c.country
 }
 
-func (c *City) GetDistricts() []District {
-	return c.districts
+func (c *City) GetDistricts() *[]District {
+	return &c.districts
 }
 
 func (c *City) SetName(newName string) {

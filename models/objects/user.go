@@ -23,8 +23,8 @@ func (u *User) GetName() string {
 	return u.name
 }
 
-func (u *User) GetCars() []Car {
-	return u.cars
+func (u *User) GetCars() *[]Car {
+	return &u.cars
 }
 
 func (u *User) SetName(newName string) {
