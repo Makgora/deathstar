@@ -10,9 +10,9 @@ type User struct {
 	name	string
 	cars	[]Car
 }
-func NewUser(name string) User {
+func NewUser(name string) *User {
 	newUser := User {tools.GenerateId("US"), name, make([]Car, 0)}
-	return newUser
+	return &newUser
 }
 
 func (u *User) GetUserId() string {

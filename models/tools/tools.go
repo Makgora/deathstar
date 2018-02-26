@@ -13,33 +13,30 @@ func GenerateId(codeObject string) string {
 	return codeObject + newId.String()
 }
 
+func Check(e error) {
+	if e != nil {
+		panic(e)
+	}
+}
+
 func OpenFile(fileName string) *os.File {
 	xmlFile, err := os.Open(fileName)
-	if err != nil {
-		fmt.Println(err)
-	}
+	Check(err)
 	return xmlFile
 }
 
-func DownloadFile(filePath string, url string) error {
-
+func DownloadFile(filePath string, url string) {
 	// Create the file
 	out, err := os.Create(filePath)
-	if err != nil {
-	}
+	Check(err)
 	defer out.Close()
 
 	// Get the data
 	resp, err := http.Get(url)
-	if err != nil {
-		return err
-	}
+	Check(err)
 	defer resp.Body.Close()
 
 	// Write the body to file
 	_, err = io.Copy(out, resp.Body)
-	if err != nil {
-		return err
-	}
-	return nil
+	Check(err)
 }

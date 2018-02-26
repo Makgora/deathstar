@@ -12,9 +12,9 @@ type District struct {
 	parkings 	[]Parking
 }
 
-func NewDistrict(name string, city *City) District {
+func NewDistrict(name string, city *City) *District {
 	newDistrict := District{tools.GenerateId("DI"), name, city, make([]Parking, 0)}
-	return newDistrict
+	return &newDistrict
 }
 
 func (d *District) GetDistrictId() string {

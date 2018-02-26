@@ -28,26 +28,26 @@ func TestUserSetters(t *testing.T) {
 
 func TestUserAddCar(t *testing.T) {
 	user := NewUser("")
-	newCar := NewCar("", &user)
+	newCar := NewCar("", user)
 
-	if len(user.GetCars()) != 0 {
-		t.Error("Wrong cars number ! Expected 0 got ", len(user.GetCars()))
+	if len(*user.GetCars()) != 0 {
+		t.Error("Wrong cars number ! Expected 0 got ", len(*user.GetCars()))
 	}
-	user.AddCar(&newCar)
-	if len(user.GetCars()) != 1 {
-		t.Error("Wrong cars number ! Expected 1 got ", len(user.GetCars()))
+	user.AddCar(newCar)
+	if len(*user.GetCars()) != 1 {
+		t.Error("Wrong cars number ! Expected 1 got ", len(*user.GetCars()))
 	}
 }
 
 func TestUserDelCar(t *testing.T) {
 	user := NewUser("")
-	newCar := NewCar("", &user)
-	user.AddCar(&newCar)
-	if len(user.GetCars()) != 1 {
-		t.Error("Wrong cars number ! Expected 1 got ", len(user.GetCars()))
+	newCar := NewCar("", user)
+	user.AddCar(newCar)
+	if len(*user.GetCars()) != 1 {
+		t.Error("Wrong cars number ! Expected 1 got ", len(*user.GetCars()))
 	}
-	user.DelCar(newCar)
-	if len(user.GetCars()) != 0 {
-		t.Error("Wrong cars number ! Expected 0 got ", len(user.GetCars()))
+	user.DelCar(*newCar)
+	if len(*user.GetCars()) != 0 {
+		t.Error("Wrong cars number ! Expected 0 got ", len(*user.GetCars()))
 	}
 }

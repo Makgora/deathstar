@@ -11,9 +11,9 @@ type Car struct {
 	user  *User
 }
 
-func NewCar(name string, user *User) Car {
+func NewCar(name string, user *User) *Car {
 	newCar := Car{tools.GenerateId("CA"), name, user}
-	return newCar
+	return &newCar
 }
 
 func (c *Car) GetCarId() string {

@@ -11,9 +11,9 @@ type Owner struct {
 	parkings []Parking
 }
 
-func NewOwner(name string) Owner {
+func NewOwner(name string) *Owner {
 	newOwner := Owner{tools.GenerateId("OW"), name, make([]Parking, 0)}
-	return newOwner
+	return &newOwner
 }
 
 func (o *Owner) GetOwnerId() string {

@@ -17,9 +17,9 @@ type Parking struct {
 	dayOccSpacesCount int
 }
 
-func NewParking(name string, owner *Owner, district *District, spacesCount int) Parking {
+func NewParking(name string, owner *Owner, district *District, spacesCount int) *Parking {
 	newParking := Parking{tools.GenerateId("PA"), name, owner, district, spacesCount, 0, 0, 0, 0}
-	return newParking
+	return &newParking
 }
 
 func (p *Parking) GetParkingId() string {

@@ -9,7 +9,7 @@ func TestNewCity(t *testing.T) {
 	name := "cityTest"
 	country := NewCountry("countryTest")
 
-	city := NewCity(name, &country)
+	city := NewCity(name, country)
 
 	if city.GetName() != name {
 		t.Error("Wrong name ! Expected ", name, " got ", city.GetName())
@@ -20,7 +20,7 @@ func TestNewCity(t *testing.T) {
 
 func TestCitySetters(t *testing.T) {
 	country := NewCountry("testCountry")
-	city := NewCity("nameTest", &country)
+	city := NewCity("nameTest", country)
 
 	t.Run("SetName", func(t *testing.T) {
 		newNameTest := "newNameTest"
@@ -31,7 +31,7 @@ func TestCitySetters(t *testing.T) {
 	})
 	t.Run("SetCountry", func(t *testing.T) {
 		newCountry := NewCountry("newTestCountry")
-		city.SetCountry(&newCountry)
+		city.SetCountry(newCountry)
 		if city.GetCountry().GetName() != newCountry.GetName() {
 			t.Error("Wrong country ! Expected ", newCountry, " got ", city.GetCountry().GetName())
 		}
@@ -40,29 +40,29 @@ func TestCitySetters(t *testing.T) {
 
 func TestCityAddDistrict(t *testing.T) {
 	country := NewCountry("")
-	city := NewCity("", &country)
+	city := NewCity("", country)
 
-	if len(city.GetDistricts()) != 0 {
-		t.Error("Wrong district number ! Expected 0 got ", len(city.GetDistricts()))
+	if len(*city.GetDistricts()) != 0 {
+		t.Error("Wrong district number ! Expected 0 got ", len(*city.GetDistricts()))
 	}
-	newDistrict := NewDistrict("", &city)
-	city.AddDistrict(&newDistrict)
-	if len(city.GetDistricts()) != 1 {
-		t.Error("Wrong district number ! Expected 1 got ", len(city.GetDistricts()))
+	newDistrict := NewDistrict("", city)
+	city.AddDistrict(newDistrict)
+	if len(*city.GetDistricts()) != 1 {
+		t.Error("Wrong district number ! Expected 1 got ", len(*city.GetDistricts()))
 	}
 }
 
 func TestCityDelDistrict(t *testing.T) {
 	country := NewCountry("")
-	city := NewCity("", &country)
+	city := NewCity("", country)
 
-	newDistrict := NewDistrict("", &city)
-	city.AddDistrict(&newDistrict)
-	if len(city.GetDistricts()) != 1 {
-		t.Error("Wrong district number ! Expected 1 got ", len(city.GetDistricts()))
+	newDistrict := NewDistrict("", city)
+	city.AddDistrict(newDistrict)
+	if len(*city.GetDistricts()) != 1 {
+		t.Error("Wrong district number ! Expected 1 got ", len(*city.GetDistricts()))
 	}
-	city.DelDistrict(newDistrict)
-	if len(city.GetDistricts()) != 0 {
-		t.Error("Wrong district number ! Expected 0 got ", len(city.GetDistricts()))
+	city.DelDistrict(*newDistrict)
+	if len(*city.GetDistricts()) != 0 {
+		t.Error("Wrong district number ! Expected 0 got ", len(*city.GetDistricts()))
 	}
 }

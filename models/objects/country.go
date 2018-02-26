@@ -11,9 +11,9 @@ type Country struct {
 	cities    []City
 }
 
-func NewCountry(name string) Country {
+func NewCountry(name string) *Country {
 	newCountry := Country{tools.GenerateId("CO"), name, make([]City, 0)}
-	return newCountry
+	return &newCountry
 }
 
 func (c *Country) GetCountryId() string {

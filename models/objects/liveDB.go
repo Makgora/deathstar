@@ -1,6 +1,6 @@
 package objects
 
-import "github.com/astaxie/beego"
+import "sync"
 
 type LiveDB struct {
 	cars		[]Car
@@ -12,11 +12,21 @@ type LiveDB struct {
 	users		[]User
 }
 
-func NewLiveDB() LiveDB {
+var liveDB *LiveDB
+var once sync.Once
+
+func newLiveDB() *LiveDB {
 	newLiveDB := LiveDB{make([]Car, 0), make([]City, 0), make([]Country, 0),
 	make([]District, 0), make([]Owner, 0), make([]Parking, 0),
 	make([]User, 0)}
-	return newLiveDB
+	return &newLiveDB
+}
+
+func GetLiveDB() *LiveDB {
+	once.Do(func() {
+		liveDB = newLiveDB()
+	})
+	return liveDB
 }
 
 func (l *LiveDB) GetCars() *[]Car {
@@ -114,3 +124,4 @@ func (l *LiveDB) DelUser(user User) {
 		}
 	}
 }
+

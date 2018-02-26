@@ -7,14 +7,14 @@ import (
 
 func TestNewParking(t *testing.T) {
 	country := NewCountry("")
-	city := NewCity("", &country)
+	city := NewCity("", country)
 
 	name := "nameTest"
 	owner := NewOwner("")
-	district := NewDistrict("", &city)
+	district := NewDistrict("", city)
 	spacesCount := 100
 
-	parking := NewParking(name, &owner, &district, spacesCount)
+	parking := NewParking(name, owner, district, spacesCount)
 	if parking.GetName() != name {
 		t.Error("Wrong name ! Expected ", name, " got ", parking.GetName())
 	}
@@ -43,14 +43,14 @@ func TestNewParking(t *testing.T) {
 
 func TestParkingSetters(t *testing.T) {
 	country := NewCountry("")
-	city := NewCity("", &country)
+	city := NewCity("", country)
 
 	name := "nameTest"
 	owner := NewOwner("")
-	district := NewDistrict("", &city)
+	district := NewDistrict("", city)
 	spacesCount := 100
 
-	parking := NewParking(name, &owner, &district, spacesCount)
+	parking := NewParking(name, owner, district, spacesCount)
 	t.Run("SetName", func(t *testing.T) {
 		newName := "newNameTest"
 		parking.SetName(newName)
@@ -60,14 +60,14 @@ func TestParkingSetters(t *testing.T) {
 	})
 	t.Run("SetOwner", func(t *testing.T) {
 		newOwner := NewOwner("")
-		parking.SetOwner(&newOwner)
+		parking.SetOwner(newOwner)
 		if parking.GetOwner().GetOwnerId() != newOwner.GetOwnerId() {
 			t.Error("Wrong owner ! Expected ", newOwner.GetOwnerId(), " got ", parking.GetOwner().GetOwnerId())
 		}
 	})
 	t.Run("SetDistrict", func(t *testing.T) {
-		newDistrict := NewDistrict("", &city)
-		parking.SetDistrict(&newDistrict)
+		newDistrict := NewDistrict("", city)
+		parking.SetDistrict(newDistrict)
 		if parking.GetDistrict().GetDistrictId() != newDistrict.GetDistrictId() {
 			t.Error("Wrong district ! Expected ", newDistrict.GetDistrictId(), " got ", parking.GetDistrict().GetDistrictId())
 		}

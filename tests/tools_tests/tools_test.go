@@ -30,9 +30,7 @@ func TestDownloadFile(t *testing.T) {
 	tools.DownloadFile(filePath, url)
 	cmd := exec.Command("wget", url, "-O", "places.xml")
 	err := cmd.Run()
-	if err != nil {
-		log.Fatal(err)
-	}
+	tools.Check(err)
 	if _, err := os.Stat(filePath); os.IsNotExist(err) {
 		t.Error("File doesn't exist !")
 	}
@@ -40,15 +38,11 @@ func TestDownloadFile(t *testing.T) {
 	var out bytes.Buffer
 	cmd.Stdout = &out
 	err = cmd.Run()
-	if err != nil {
-		log.Fatal(err)
-	}
+	tools.Check(err)
 	if out.String() != "" {
 		t.Error("Wrong content ! Expected '' got '", out.String(), "'")
 	}
 	cmd = exec.Command("rm", "places.xml", filePath)
 	err = cmd.Run()
-	if err != nil {
-		log.Fatal(err)
-	}
+	tools.Check(err)
 }

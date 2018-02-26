@@ -27,32 +27,32 @@ func TestOwnerSetters(t *testing.T) {
 
 func TestOwnerAddParking(t *testing.T) {
 	owner := NewOwner("")
-	if len(owner.GetParkings()) != 0 {
-		t.Error("Wrong parkings number ! Expected 0 got ", len(owner.GetParkings()))
+	if len(*owner.GetParkings()) != 0 {
+		t.Error("Wrong parkings number ! Expected 0 got ", len(*owner.GetParkings()))
 	}
 	country := NewCountry("")
-	city := NewCity("", &country)
-	district := NewDistrict("", &city)
-	newParking := NewParking("", &owner, &district, 0)
-	owner.AddParking(&newParking)
-	if len(owner.GetParkings()) != 1 {
-		t.Error("Wrong parkings number ! Expected 1 got ", len(owner.GetParkings()))
+	city := NewCity("", country)
+	district := NewDistrict("", city)
+	newParking := NewParking("", owner, district, 0)
+	owner.AddParking(newParking)
+	if len(*owner.GetParkings()) != 1 {
+		t.Error("Wrong parkings number ! Expected 1 got ", len(*owner.GetParkings()))
 	}
 }
 
 func TestOwnerDelParking(t *testing.T) {
 	owner := NewOwner("")
 	country := NewCountry("")
-	city := NewCity("", &country)
-	district := NewDistrict("", &city)
-	newParking := NewParking("", &owner, &district, 0)
+	city := NewCity("", country)
+	district := NewDistrict("", city)
+	newParking := NewParking("", owner, district, 0)
 
-	owner.AddParking(&newParking)
-	if len(owner.GetParkings()) != 1 {
-		t.Error("Wrong parkings number ! Expected 1 got ", len(owner.GetParkings()))
+	owner.AddParking(newParking)
+	if len(*owner.GetParkings()) != 1 {
+		t.Error("Wrong parkings number ! Expected 1 got ", len(*owner.GetParkings()))
 	}
-	owner.DelParking(newParking)
-	if len(owner.GetParkings()) != 0 {
-		t.Error("Wrong parkings number ! Expected 0 got ", len(owner.GetParkings()))
+	owner.DelParking(*newParking)
+	if len(*owner.GetParkings()) != 0 {
+		t.Error("Wrong parkings number ! Expected 0 got ", len(*owner.GetParkings()))
 	}
 }
