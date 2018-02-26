@@ -26,7 +26,6 @@ func DownloadFile(filePath string, url string) error {
 	// Create the file
 	out, err := os.Create(filePath)
 	if err != nil {
-		return err
 	}
 	defer out.Close()
 
@@ -42,6 +41,5 @@ func DownloadFile(filePath string, url string) error {
 	if err != nil {
 		return err
 	}
-
 	return nil
 }

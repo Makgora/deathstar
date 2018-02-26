@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef098f15-d4f5-4b4d-9c95-1d866c7bb67b" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/models/monaco/input.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/models/objects/liveDB.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tests/tools_tests/tools_test.go" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/controllers/default.go" afterPath="$PROJECT_DIR$/controllers/default.go" />
-      <change beforePath="$PROJECT_DIR$/models/cars/car.go" afterPath="$PROJECT_DIR$/models/objects/car.go" />
-      <change beforePath="$PROJECT_DIR$/models/cities/city.go" afterPath="$PROJECT_DIR$/models/objects/city.go" />
-      <change beforePath="$PROJECT_DIR$/models/countries/country.go" afterPath="$PROJECT_DIR$/models/objects/country.go" />
-      <change beforePath="$PROJECT_DIR$/models/districts/district.go" afterPath="$PROJECT_DIR$/models/objects/district.go" />
-      <change beforePath="$PROJECT_DIR$/models/owners/owner.go" afterPath="$PROJECT_DIR$/models/objects/owner.go" />
-      <change beforePath="$PROJECT_DIR$/models/parkings/parking.go" afterPath="$PROJECT_DIR$/models/objects/parking.go" />
       <change beforePath="$PROJECT_DIR$/models/tools/tools.go" afterPath="$PROJECT_DIR$/models/tools/tools.go" />
-      <change beforePath="$PROJECT_DIR$/models/users/user.go" afterPath="$PROJECT_DIR$/models/objects/user.go" />
-      <change beforePath="$PROJECT_DIR$/tests/cars_tests/car_test.go" afterPath="$PROJECT_DIR$/tests/objects_tests/car_test.go" />
-      <change beforePath="$PROJECT_DIR$/tests/cities_tests/city_test.go" afterPath="$PROJECT_DIR$/tests/objects_tests/city_test.go" />
-      <change beforePath="$PROJECT_DIR$/tests/countries_tests/country_test.go" afterPath="$PROJECT_DIR$/tests/objects_tests/country_test.go" />
-      <change beforePath="$PROJECT_DIR$/tests/districts_tests/district_test.go" afterPath="$PROJECT_DIR$/tests/objects_tests/district_test.go" />
-      <change beforePath="$PROJECT_DIR$/tests/owners_tests/owner_test.go" afterPath="$PROJECT_DIR$/tests/objects_tests/owner_test.go" />
-      <change beforePath="$PROJECT_DIR$/tests/parkings_tests/parking_test.go" afterPath="$PROJECT_DIR$/tests/objects_tests/parking_test.go" />
-      <change beforePath="$PROJECT_DIR$/tests/users_tests/user_test.go" afterPath="$PROJECT_DIR$/tests/objects_tests/user_test.go" />
-      <change beforePath="$PROJECT_DIR$/views/index.tpl" afterPath="$PROJECT_DIR$/views/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,21 +18,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="default.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/default.go">
+      <file leaf-file-name="liveDB.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/objects/liveDB.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="324">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.html">
+      <file leaf-file-name="input.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/monaco/input.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-833">
-              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="18">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -82,7 +69,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/models/tools.go" />
         <option value="$PROJECT_DIR$/models/parking.go" />
         <option value="$PROJECT_DIR$/tests/parking_test.go" />
         <option value="$PROJECT_DIR$/tests/owner_test.go" />
@@ -123,9 +109,17 @@
         <option value="$PROJECT_DIR$/tests/objects_tests/user_test.go" />
         <option value="$PROJECT_DIR$/models/objects/owner.go" />
         <option value="$PROJECT_DIR$/tests/objects_tests/car_test.go" />
-        <option value="$PROJECT_DIR$/models/tools/tools.go" />
         <option value="$PROJECT_DIR$/models/input/parseXml.go" />
         <option value="$PROJECT_DIR$/controllers/default.go" />
+        <option value="$PROJECT_DIR$/models/input/getOpenData.go" />
+        <option value="$PROJECT_DIR$/tests/tools_tests/google.txt" />
+        <option value="$PROJECT_DIR$/models/tools/tools.go" />
+        <option value="$PROJECT_DIR$/tests/tools_tests/tools_test.go" />
+        <option value="$PROJECT_DIR$/models/input/monaco/getOpenData.go" />
+        <option value="$PROJECT_DIR$/models/monaco/input/monaco_input.go" />
+        <option value="$PROJECT_DIR$/models/objects/objects.go" />
+        <option value="$PROJECT_DIR$/models/objects/liveDB.go" />
+        <option value="$PROJECT_DIR$/models/monaco/input.go" />
       </list>
     </option>
   </component>
@@ -179,23 +173,24 @@
             <path>
               <item name="DeathStar" type="b2602c69:ProjectViewProjectNode" />
               <item name="DeathStar" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DeathStar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DeathStar" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DeathStar" type="b2602c69:ProjectViewProjectNode" />
               <item name="DeathStar" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
+              <item name="monaco" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DeathStar" type="b2602c69:ProjectViewProjectNode" />
               <item name="DeathStar" type="462c0819:PsiDirectoryNode" />
-              <item name="routers" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="objects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeathStar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeathStar" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DeathStar" type="b2602c69:ProjectViewProjectNode" />
@@ -232,11 +227,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/models/input/monaco" />
       <recent name="$PROJECT_DIR$/tests/objects_tests" />
       <recent name="$PROJECT_DIR$/models/objects" />
       <recent name="$PROJECT_DIR$/tests/parkings" />
       <recent name="$PROJECT_DIR$/tests/owners" />
-      <recent name="$PROJECT_DIR$/tests/cars" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -252,15 +247,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Go Build.go build main.go">
-    <configuration name="go build DeathStar/tests" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
-      <module name="DeathStar" />
-      <working_directory value="$PROJECT_DIR$" />
-      <go_parameters value="-i" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$" />
-      <package value="DeathStar/tests" />
-      <directory value="$PROJECT_DIR$" />
-    </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="DeathStar" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -278,14 +264,23 @@
       <package value="DeathStar/tests/objects_tests" />
       <pattern value="^TestCarSetters$" />
     </configuration>
-    <configuration name="TestNewDistrict in district_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+    <configuration name="TestDownloadFile in tools_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
       <module name="DeathStar" />
-      <working_directory value="$PROJECT_DIR$/tests/districts_tests" />
+      <working_directory value="$PROJECT_DIR$/tests/tools_tests" />
       <go_parameters value="-i" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="DeathStar/tests/districts_tests" />
-      <pattern value="^TestNewDistrict$" />
+      <package value="DeathStar/tests/tools_tests" />
+      <pattern value="^TestDownloadFile$" />
+    </configuration>
+    <configuration name="TestGenerateId in tools_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+      <module name="DeathStar" />
+      <working_directory value="$PROJECT_DIR$/tests/tools_tests" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="DeathStar/tests/tools_tests" />
+      <pattern value="^TestGenerateId$" />
     </configuration>
     <configuration name="go test tests" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
       <module name="DeathStar" />
@@ -376,19 +371,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Go Build.go build DeathStar/tests" />
-      <item index="1" class="java.lang.String" itemvalue="Go Test.go test tests" />
-      <item index="2" class="java.lang.String" itemvalue="Go Test.TestNewDistrict in district_test.go" />
-      <item index="3" class="java.lang.String" itemvalue="Go Test.TestCarSetters in car_test.go" />
-      <item index="4" class="java.lang.String" itemvalue="Go Build.go build main.go" />
+      <item index="0" class="java.lang.String" itemvalue="Go Test.go test tests" />
+      <item index="1" class="java.lang.String" itemvalue="Go Test.TestCarSetters in car_test.go" />
+      <item index="2" class="java.lang.String" itemvalue="Go Build.go build main.go" />
+      <item index="3" class="java.lang.String" itemvalue="Go Test.TestGenerateId in tools_test.go" />
+      <item index="4" class="java.lang.String" itemvalue="Go Test.TestDownloadFile in tools_test.go" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Go Build.go build main.go" />
-        <item index="1" class="java.lang.String" itemvalue="Go Test.go test tests" />
-        <item index="2" class="java.lang.String" itemvalue="Go Test.TestCarSetters in car_test.go" />
-        <item index="3" class="java.lang.String" itemvalue="Go Test.TestNewDistrict in district_test.go" />
-        <item index="4" class="java.lang.String" itemvalue="Go Build.go build DeathStar/tests" />
+        <item index="1" class="java.lang.String" itemvalue="Go Test.TestDownloadFile in tools_test.go" />
+        <item index="2" class="java.lang.String" itemvalue="Go Test.TestGenerateId in tools_test.go" />
+        <item index="3" class="java.lang.String" itemvalue="Go Test.go test tests" />
+        <item index="4" class="java.lang.String" itemvalue="Go Test.TestCarSetters in car_test.go" />
       </list>
     </recent_temporary>
   </component>
@@ -411,35 +406,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestCarSetters_in_car_test_go - 2018.02.21 at 11h 09m 43s.xml">
-      <configuration name="TestCarSetters in car_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDownloadFile_in_tools_test_go - 2018.02.26 at 12h 27m 17s.xml">
+      <configuration name="TestDownloadFile in tools_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_tests - 2018.02.18 at 12h 08m 10s.xml">
-      <configuration name="go test tests" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDownloadFile_in_tools_test_go - 2018.02.26 at 12h 27m 40s.xml">
+      <configuration name="TestDownloadFile in tools_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_tests - 2018.02.18 at 12h 08m 21s.xml">
-      <configuration name="go test tests" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDownloadFile_in_tools_test_go - 2018.02.26 at 13h 49m 20s.xml">
+      <configuration name="TestDownloadFile in tools_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_tests - 2018.02.18 at 23h 08m 49s.xml">
-      <configuration name="go test tests" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDownloadFile_in_tools_test_go - 2018.02.26 at 13h 49m 31s.xml">
+      <configuration name="TestDownloadFile in tools_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_tests - 2018.02.18 at 23h 10m 41s.xml">
-      <configuration name="go test tests" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDownloadFile_in_tools_test_go - 2018.02.26 at 13h 58m 43s.xml">
+      <configuration name="TestDownloadFile in tools_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_tests - 2018.02.21 at 11h 08m 13s.xml">
-      <configuration name="go test tests" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDownloadFile_in_tools_test_go - 2018.02.26 at 13h 59m 07s.xml">
+      <configuration name="TestDownloadFile in tools_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_tests - 2018.02.21 at 11h 09m 03s.xml">
-      <configuration name="go test tests" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDownloadFile_in_tools_test_go - 2018.02.26 at 14h 02m 57s.xml">
+      <configuration name="TestDownloadFile in tools_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_tests - 2018.02.21 at 11h 12m 58s.xml">
-      <configuration name="go test tests" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDownloadFile_in_tools_test_go - 2018.02.26 at 14h 05m 41s.xml">
+      <configuration name="TestDownloadFile in tools_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_tests - 2018.02.21 at 11h 47m 49s.xml">
-      <configuration name="go test tests" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDownloadFile_in_tools_test_go - 2018.02.26 at 14h 05m 57s.xml">
+      <configuration name="TestDownloadFile in tools_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_tests - 2018.02.21 at 11h 51m 00s.xml">
-      <configuration name="go test tests" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestGenerateId_in_tools_test_go - 2018.02.26 at 11h 57m 54s.xml">
+      <configuration name="TestGenerateId in tools_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -454,12 +449,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.296" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39968154" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -497,53 +492,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/objects/district.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/objects/district.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/objects/city.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/objects/country.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/objects/district.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/objects/city.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/go/src/net/url/url.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -562,7 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -577,7 +524,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,13 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/objects_tests/car_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="27" column="32" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/objects/owner.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -723,19 +662,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/objects/parking.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="69" column="17" lean-forward="false" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/objects/user.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -750,7 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -758,7 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
           <caret line="75" column="5" lean-forward="false" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,9 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="55" column="19" lean-forward="false" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
-          <folding>
-            <element signature="e#1443#1497#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -776,6 +701,113 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/astaxie/beego/app.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3114">
+          <caret line="239" column="5" lean-forward="false" selection-start-line="239" selection-start-column="5" selection-end-line="239" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routers/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/app.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/input/parseXml.go" />
+    <entry file="file://$PROJECT_DIR$/../github.com/astaxie/beego/beego.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/astaxie/beego/controller.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1475">
+          <caret line="66" column="5" lean-forward="false" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/default.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/objects_tests/car_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="32" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tools_tests/google.txt" />
+    <entry file="file://$PROJECT_DIR$/tests/tools_tests/tools_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding>
+            <element signature="e#21#101#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/tools/tools.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/input/monaco/getOpenData.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/monaco/input/monaco_input.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/objects/parking.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -788,86 +820,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../github.com/astaxie/beego/app.go">
+    <entry file="file://$PROJECT_DIR$/models/objects/liveDB.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3114">
-          <caret line="239" column="5" lean-forward="false" selection-start-line="239" selection-start-column="5" selection-end-line="239" selection-end-column="5" />
+        <state relative-caret-position="324">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routers/router.go">
+    <entry file="file://$PROJECT_DIR$/models/monaco/input.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding>
-            <element signature="e#17#80#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/app.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/input/parseXml.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/tools/tools.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="e#15#77#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../github.com/astaxie/beego/beego.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-833">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../github.com/astaxie/beego/controller.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1475">
-          <caret line="66" column="5" lean-forward="false" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/default.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
