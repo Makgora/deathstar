@@ -1,17 +1,18 @@
 package objects
 
 import (
-	"fmt"
 	"DeathStar/models/tools"
+	"fmt"
 )
 
 type User struct {
-	userId	string
-	name	string
-	cars	[]Car
+	userId string
+	name   string
+	cars   []Car
 }
+
 func NewUser(name string) *User {
-	newUser := User {tools.GenerateId("US"), name, make([]Car, 0)}
+	newUser := User{tools.GenerateId("US"), name, make([]Car, 0)}
 	return &newUser
 }
 

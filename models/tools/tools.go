@@ -2,10 +2,9 @@ package tools
 
 import (
 	"github.com/rs/xid"
-	"os"
-	"fmt"
-	"net/http"
 	"io"
+	"net/http"
+	"os"
 )
 
 func GenerateId(codeObject string) string {

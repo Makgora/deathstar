@@ -6,10 +6,10 @@ import (
 )
 
 type District struct {
-	districtId 	string
-	name       	string
-	city       	*City
-	parkings 	[]Parking
+	districtId string
+	name       string
+	city       *City
+	parkings   []Parking
 }
 
 func NewDistrict(name string, city *City) *District {
@@ -56,4 +56,3 @@ func (d *District) DelParking(parking Parking) {
 		}
 	}
 }
-

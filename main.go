@@ -2,9 +2,10 @@ package main
 
 import (
 	_ "DeathStar/routers"
-	"github.com/astaxie/beego"
+	"DeathStar/models/monaco"
 )
 
 func main() {
-	beego.Run()
+	//beego.Run()
+	monaco.UpdateMonaco()
 }

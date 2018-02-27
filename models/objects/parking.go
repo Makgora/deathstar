@@ -91,9 +91,9 @@ func (p *Parking) SetDayOccSpacesCount(newDayOccSpacesCount int) {
 }
 
 func (p Parking) String() string {
-	return fmt.Sprintf("[ID]: '%s' | [Name]: '%s' | [Owner]: '%s' " +
-		"| [District]: '%s'| [SpacesCount]: '%d' | [FreeSpacesCount]: '%d' " +
-			"| [OccSpacesCount]: '%d' | [SubOccSpacesCount]: '%d' | [DayOccSpacesCount]: '%d'",
+	return fmt.Sprintf("[ID]: '%s' | [Name]: '%s' | [Owner]: '%s' "+
+		"| [District]: '%s'| [SpacesCount]: '%d' | [FreeSpacesCount]: '%d' "+
+		"| [OccSpacesCount]: '%d' | [SubOccSpacesCount]: '%d' | [DayOccSpacesCount]: '%d'",
 		p.parkingId, p.name, p.owner.GetName(), p.district.GetName(), p.spacesCount,
-			p.freeSpacesCount, p.occSpacesCount, p.subOccSpacesCount, p.dayOccSpacesCount)
+		p.freeSpacesCount, p.occSpacesCount, p.subOccSpacesCount, p.dayOccSpacesCount)
 }

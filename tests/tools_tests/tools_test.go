@@ -1,12 +1,12 @@
 package tools_tests
 
 import (
-	"testing"
 	"DeathStar/models/tools"
-	"os/exec"
+	"bytes"
 	"log"
 	"os"
-	"bytes"
+	"os/exec"
+	"testing"
 )
 
 func TestGenerateId(t *testing.T) {
