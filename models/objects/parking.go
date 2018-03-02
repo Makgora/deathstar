@@ -10,6 +10,7 @@ type Parking struct {
 	name              string
 	owner             *Owner
 	district          *District
+	status			  string
 	spacesCount       int
 	freeSpacesCount   int
 	occSpacesCount    int
@@ -18,7 +19,7 @@ type Parking struct {
 }
 
 func NewParking(name string, owner *Owner, district *District, spacesCount int) *Parking {
-	newParking := Parking{tools.GenerateId("PA"), name, owner, district, spacesCount, 0, 0, 0, 0}
+	newParking := Parking{tools.GenerateId("PA"), name, owner, district, "", spacesCount, 0, 0, 0, 0}
 	return &newParking
 }
 
@@ -36,6 +37,10 @@ func (p *Parking) GetOwner() *Owner {
 
 func (p *Parking) GetDistrict() *District {
 	return p.district
+}
+
+func (p *Parking) GetStatus() string {
+	return p.status
 }
 
 func (p *Parking) GetSpacesCount() int {
@@ -70,6 +75,10 @@ func (p *Parking) SetDistrict(newDistrict *District) {
 	p.district = newDistrict
 }
 
+func (p *Parking) SetStatus(newStatus string) {
+	p.status = newStatus
+}
+
 func (p *Parking) SetSpacesCount(newSpacesCount int) {
 	p.spacesCount = newSpacesCount
 }
@@ -92,8 +101,8 @@ func (p *Parking) SetDayOccSpacesCount(newDayOccSpacesCount int) {
 
 func (p Parking) String() string {
 	return fmt.Sprintf("[ID]: '%s' | [Name]: '%s' | [Owner]: '%s' "+
-		"| [District]: '%s'| [SpacesCount]: '%d' | [FreeSpacesCount]: '%d' "+
+		"| [District]: '%s'| [Status]: %s | [SpacesCount]: '%d' | [FreeSpacesCount]: '%d' "+
 		"| [OccSpacesCount]: '%d' | [SubOccSpacesCount]: '%d' | [DayOccSpacesCount]: '%d'",
-		p.parkingId, p.name, p.owner.GetName(), p.district.GetName(), p.spacesCount,
+		p.parkingId, p.name, p.owner.GetName(), p.district.GetName(), p.status, p.spacesCount,
 		p.freeSpacesCount, p.occSpacesCount, p.subOccSpacesCount, p.dayOccSpacesCount)
 }

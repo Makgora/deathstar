@@ -1,24 +1,20 @@
 package objects
 
-import "sync"
+import (
+	"sync"
+)
 
 type LiveDB struct {
-	cars      []Car
 	cities    []City
-	countries []Country
-	districts []District
 	owners    []Owner
-	parkings  []Parking
-	users     []User
+	users	  []User
 }
 
 var liveDB *LiveDB
 var once sync.Once
 
 func newLiveDB() *LiveDB {
-	newLiveDB := LiveDB{make([]Car, 0), make([]City, 0), make([]Country, 0),
-		make([]District, 0), make([]Owner, 0), make([]Parking, 0),
-		make([]User, 0)}
+	newLiveDB := LiveDB{make([]City, 0), make([]Owner, 0), make([]User, 0)}
 	return &newLiveDB
 }
 
@@ -29,60 +25,37 @@ func GetLiveDB() *LiveDB {
 	return liveDB
 }
 
-func (l *LiveDB) GetCars() *[]Car {
-	return &l.cars
-}
-
 func (l *LiveDB) GetCities() *[]City {
 	return &l.cities
 }
 
-func (l *LiveDB) GetCountries() *[]Country {
-	return &l.countries
+func (l *LiveDB) GetCity(cityName string) *City {
+	for i, _ := range l.cities {
+		if l.cities[i].name == cityName {
+			return &l.cities[i]
+		}
+	}
+	return nil
 }
 
 func (l *LiveDB) GetOwners() *[]Owner {
 	return &l.owners
 }
 
-func (l *LiveDB) GetParkings() *[]Parking {
-	return &l.parkings
-}
-
 func (l *LiveDB) GetUsers() *[]User {
 	return &l.users
-}
-
-func (l *LiveDB) AddCar(newCar *Car) {
-	l.cars = append(l.cars, *newCar)
 }
 
 func (l *LiveDB) AddCity(newCity *City) {
 	l.cities = append(l.cities, *newCity)
 }
 
-func (l *LiveDB) AddCountry(newCountry *Country) {
-	l.countries = append(l.countries, *newCountry)
-}
-
 func (l *LiveDB) AddOwner(newOwner *Owner) {
 	l.owners = append(l.owners, *newOwner)
 }
 
-func (l *LiveDB) AddParking(newParking *Parking) {
-	l.parkings = append(l.parkings, *newParking)
-}
-
 func (l *LiveDB) AddUser(newUser *User) {
 	l.users = append(l.users, *newUser)
-}
-
-func (l *LiveDB) DelCar(car Car) {
-	for i, v := range l.cars {
-		if v.GetCarId() == car.GetCarId() {
-			l.cars = append(l.cars[:i], l.cars[i+1:]...)
-		}
-	}
 }
 
 func (l *LiveDB) DelCity(city City) {
@@ -93,26 +66,10 @@ func (l *LiveDB) DelCity(city City) {
 	}
 }
 
-func (l *LiveDB) DelCountry(country Country) {
-	for i, v := range l.countries {
-		if v.GetCountryId() == country.GetCountryId() {
-			l.countries = append(l.countries[:i], l.countries[i+1:]...)
-		}
-	}
-}
-
 func (l *LiveDB) DelOwner(owner Owner) {
 	for i, v := range l.owners {
 		if v.GetOwnerId() == owner.GetOwnerId() {
 			l.owners = append(l.owners[:i], l.owners[i+1:]...)
-		}
-	}
-}
-
-func (l *LiveDB) DelParking(parking Parking) {
-	for i, v := range l.parkings {
-		if v.GetParkingId() == parking.GetParkingId() {
-			l.parkings = append(l.parkings[:i], l.parkings[i+1:]...)
 		}
 	}
 }

@@ -1,11 +1,10 @@
-package monaco
+package MonacoParking
 
 import (
 	"DeathStar/models/tools"
 	"io/ioutil"
-	"fmt"
 	"encoding/xml"
-	"DeathStar/models/objects"
+	"fmt"
 )
 
 type presents struct {
@@ -19,7 +18,7 @@ type parc struct {
 	NumParc            int    `xml:"numParc"`
 	LibelleParc        string `xml:"libelleParc"`
 	StatusParc         string `xml:"statusParc"`
-	PlacesLibresParc   int    `xml:"LibresParc"`
+	PlacesLibresParc   int    `xml:"placesLibresParc"`
 	PlacesLibresUpdate string 	`xml:"placesLibresUpdate"`
 	Presents           presents `xml:"presents"`
 }
@@ -33,14 +32,14 @@ type quartier struct {
 	Parc	                      []parc
 }
 
-type document struct {
+type xmlStruct struct {
 	TotalPresent int    `xml:"totalPresent"`
 	TotalLibre   int    `xml:"totalLibre"`
 	LastUpdate   string `xml:"lastUpdate"`
 	Quartier    []quartier
 }
 
-func updateMonacoParkings() {
+func parseXml() xmlStruct {
 	filePath := "places.xml"
 	url := "https://images.monaco-parkings.mc/places.xml"
 
@@ -55,22 +54,20 @@ func updateMonacoParkings() {
 	xmlData = xmlData[44:]
 
 	// Parse xmlData
-	v := document{}
-	err = xml.Unmarshal(xmlData, &v)
+	s := xmlStruct{}
+	err = xml.Unmarshal(xmlData, &s)
 	tools.Check(err)
-
-	// Populate liveDB
-
-	objects.GetLiveDB()
+	return s
 }
 
-func printXmlStruct(v document) {
-	fmt.Printf("TotalPresent: %#v\n", v.TotalPresent)
-	fmt.Printf("TotalLibre: %#v\n", v.TotalLibre)
-	fmt.Printf("LastUpdate: %#v\n", v.LastUpdate)
+
+func printXmlStruct(s xmlStruct) {
+	fmt.Printf("TotalPresent: %#v\n", s.TotalPresent)
+	fmt.Printf("TotalLibre: %#v\n", s.TotalLibre)
+	fmt.Printf("LastUpdate: %#v\n", s.LastUpdate)
 
 	fmt.Printf("\nListe des Quartiers\n")
-	for _, c := range v.Quartier {
+	for _, c := range s.Quartier {
 		fmt.Printf("\n\tNomQuartier: %#v\n", c.NomQuartier)
 		fmt.Printf("\tTotalLibresQuartier: %#v\n", c.TotalLibresQuartier)
 		fmt.Printf("\tTotalPresentsQuartier: %#v\n", c.TotalPresentsQuartier)

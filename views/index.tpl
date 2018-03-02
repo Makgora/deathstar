@@ -17,7 +17,11 @@
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 14px;
       line-height: 20px;
-      background-image: url('../static/img/background_flou.png');
+        background: url('../static/img/background_flou.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 
     header,
@@ -63,10 +67,12 @@
 <body>
   <header>
     <h1 class="logo">Welcome to Parked's optimization tool</h1>
-    <div class="description">
-      Building...
-    </div>
   </header>
+
+  <div class="description">
+      <a href="./parkings"><button style="margin-top: 30px" class='grey rounded-box'>Parkings</button></a>
+  </div>
+
   <footer>
     <div class="author">
       Official website:
