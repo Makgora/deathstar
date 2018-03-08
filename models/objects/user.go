@@ -13,6 +13,7 @@ type User struct {
 
 func NewUser(name string) *User {
 	newUser := User{tools.GenerateId("US"), name, make([]Car, 0)}
+	GetLiveDB().AddUser(&newUser)
 	return &newUser
 }
 

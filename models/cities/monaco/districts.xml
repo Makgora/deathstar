@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Districts>
+    <District>
+        <Name>Fontvieille</Name>
+    </District>
+    <District>
+        <Name>I-Cars</Name>
+    </District>
+    <District>
+        <Name>Jardin-Exotique</Name>
+    </District>
+    <District>
+        <Name>Condamine</Name>
+    </District>
+    <District>
+        <Name>La Rousse</Name>
+    </District>
+    <District>
+        <Name>Larvotto</Name>
+    </District>
+    <District>
+        <Name>Le Rocher</Name>
+    </District>
+    <District>
+        <Name>Monte-Carlo</Name>
+    </District>
+</Districts>

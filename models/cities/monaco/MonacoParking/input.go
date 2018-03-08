@@ -2,24 +2,25 @@ package MonacoParking
 
 import (
 	"DeathStar/models/tools"
-	"io/ioutil"
 	"encoding/xml"
 	"fmt"
+	"io/ioutil"
+	"os/exec"
 )
 
 type presents struct {
-	PresentsUpdate   string 	`xml:"presentsUpdate"`
-	PresentsTotal    int 		`xml:"presentsTotal"`
-	PresentsAbonnes  string 	`xml:"presentsAbonnes"`
-	PresentsHoraires string		`xml:"presentsHoraires"`
+	PresentsUpdate   string `xml:"presentsUpdate"`
+	PresentsTotal    int    `xml:"presentsTotal"`
+	PresentsAbonnes  int 	`xml:"presentsAbonnes"`
+	PresentsHoraires int 	`xml:"presentsHoraires"`
 }
 
 type parc struct {
-	NumParc            int    `xml:"numParc"`
-	LibelleParc        string `xml:"libelleParc"`
-	StatusParc         string `xml:"statusParc"`
-	PlacesLibresParc   int    `xml:"placesLibresParc"`
-	PlacesLibresUpdate string 	`xml:"placesLibresUpdate"`
+	NumParc            string   `xml:"numParc"`
+	LibelleParc        string   `xml:"libelleParc"`
+	StatusParc         string   `xml:"statusParc"`
+	PlacesLibresParc   int      `xml:"placesLibresParc"`
+	PlacesLibresUpdate string   `xml:"placesLibresUpdate"`
 	Presents           presents `xml:"presents"`
 }
 
@@ -29,22 +30,27 @@ type quartier struct {
 	TotalPresentsQuartier         string `xml:"totalPresentsQuartier"`
 	TotalPresentsHorairesQuartier string `xml:"totalPresentsHorairesQuartier"`
 	TotalPresentsAbonnesQuartier  string `xml:"totalPresentsAbonnesQuartier"`
-	Parc	                      []parc
+	Parc                          []parc
 }
 
 type xmlStruct struct {
 	TotalPresent int    `xml:"totalPresent"`
 	TotalLibre   int    `xml:"totalLibre"`
 	LastUpdate   string `xml:"lastUpdate"`
-	Quartier    []quartier
+	Quartier     []quartier
 }
 
-func parseXml() xmlStruct {
-	filePath := "places.xml"
+func dlParseXml() xmlStruct {
+	filePath := "./models/cities/monaco/MonacoParking/places.xml"
 	url := "https://images.monaco-parkings.mc/places.xml"
 
 	// Download places.xml
 	tools.DownloadFile(filePath, url)
+
+	// Delete 'Obsolete'
+	cmd := exec.Command("sed", "-i", "--", "s/Obsolete/0/g", "./models/cities/monaco/MonacoParking/places.xml")
+	err := cmd.Run()
+	tools.Check(err)
 
 	// Open and read places.xml
 	xmlData, err := ioutil.ReadFile(filePath)
@@ -53,6 +59,7 @@ func parseXml() xmlStruct {
 	// Delete first line to avoid encoding error
 	xmlData = xmlData[44:]
 
+
 	// Parse xmlData
 	s := xmlStruct{}
 	err = xml.Unmarshal(xmlData, &s)
@@ -60,8 +67,7 @@ func parseXml() xmlStruct {
 	return s
 }
 
-
-func printXmlStruct(s xmlStruct) {
+func PrintXmlStruct(s xmlStruct) {
 	fmt.Printf("TotalPresent: %#v\n", s.TotalPresent)
 	fmt.Printf("TotalLibre: %#v\n", s.TotalLibre)
 	fmt.Printf("LastUpdate: %#v\n", s.LastUpdate)

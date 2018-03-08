@@ -1,13 +1,11 @@
 package objects
 
 import (
-	"DeathStar/models/tools"
 	"fmt"
 	"strconv"
 )
 
 type City struct {
-	cityId    string
 	name      string
 	parkings	[]Parking
 	districts	[]District
@@ -17,12 +15,9 @@ type City struct {
 }
 
 func NewCity(name string) *City {
-	newCity := City{tools.GenerateId("CI"), name, make([]Parking, 0), make([]District, 0), 0, 0, 0}
+	newCity := City{name, make([]Parking, 0), make([]District, 0), 0, 0, 0}
+	GetLiveDB().AddCity(&newCity)
 	return &newCity
-}
-
-func (c *City) GetCityId() string {
-	return c.cityId
 }
 
 func (c *City) GetName() string {
@@ -58,9 +53,9 @@ func (c *City) GetParkings() *[]Parking {
 	return &c.parkings
 }
 
-func (c *City) GetParking(parkingName string) *Parking {
+func (c *City) GetParking(parkingId string) *Parking {
 	for i, _ := range c.parkings {
-		if c.parkings[i].name == parkingName {
+		if c.parkings[i].id == parkingId {
 			return &c.parkings[i]
 		}
 	}
@@ -86,7 +81,7 @@ func (c *City) SetOccSpacesCount(newOccSpacesCount int) {
 func (c City) String() []string {
 	var s = make([]string, 0)
 	for _, p := range c.parkings {
-		//s = append(s, "IDParking: " + p.parkingId)
+		//s = append(s, "IDParking: " + p.id)
 		s = append(s, "NomParc: " + p.name)
 		s = append(s,"Quartier: " + p.district.name)
 		s = append(s, "Owner: " + p.owner.name)
@@ -100,35 +95,35 @@ func (c City) String() []string {
 }
 
 func (c City) PrintCity() {
-	fmt.Printf("\nID: %#v\n", c.cityId)
-	fmt.Printf("Name: %#v\n", c.name)
+	fmt.Printf("\nName: %#v\n", c.name)
 
 	fmt.Printf("Total: %#v\n", c.spacesCount)
 	fmt.Printf("TotalPresent: %#v\n", c.occSpacesCount)
 	fmt.Printf("TotalLibre: %#v\n\n", c.freeSpacesCount)
 
-	/*
 	fmt.Printf("Liste des Quartiers\n")
+
 	for _, d := range c.districts {
-		fmt.Printf("\n\tIDQuartier: %#v\n", d.districtId)
-		fmt.Printf("\tNomQuartier: %#v\n", d.name)
+		fmt.Printf("\n\tNomQuartier: %#v\n", d.name)
 		fmt.Printf("\tVille: %#v\n", d.city.name)
 		fmt.Printf("\tTotalQuartier: %#v\n", d.spacesCount)
 		fmt.Printf("\tTotalPresentsQuartier: %#v\n", d.occSpacesCount)
 		fmt.Printf("\tTotalLibreQuartier: %#v\n", d.freeSpacesCount)
-*/
+	}
+
 	fmt.Printf("\n\tListe des Parkings\n")
 	for _, p := range c.parkings {
-		fmt.Printf("\n\t\tIDParking: %#v\n", p.parkingId)
-		fmt.Printf("\t\tNomParc: %#v\n", p.name)
-		fmt.Printf("\t\tQuartier: %#v\n", p.district.name)
-		fmt.Printf("\t\tOwner: %#v\n", p.owner.name)
-		fmt.Printf("\t\tStatusParc: %#v\n", p.status)
-		fmt.Printf("\t\tTotalParc: %#v\n", p.spacesCount)
-		fmt.Printf("\t\tPresentsParc: %#v\n", p.occSpacesCount)
-		fmt.Printf("\t\tLibreParc: %#v\n", p.freeSpacesCount)
+		fmt.Printf("\n\tIDParking: %#v\n", p.id)
+		fmt.Printf("\tNomParc: %#v\n", p.name)
+		fmt.Printf("\tQuartier: %#v\n", p.district.name)
+		fmt.Printf("\tOwner: %#v\n", p.owner.name)
+		fmt.Printf("\tStatusParc: %#v\n", p.status)
+		fmt.Printf("\tTotalParc: %#v\n", p.spacesCount)
+		fmt.Printf("\tPresentsParc: %#v\n", p.occSpacesCount)
+		fmt.Printf("\tLibreParc: %#v\n", p.freeSpacesCount)
 	}
 }
+
 
 func (c *City) AddDistrict(newDistrict *District) {
 	c.districts = append(c.districts, *newDistrict)
@@ -136,7 +131,7 @@ func (c *City) AddDistrict(newDistrict *District) {
 
 func (c *City) DelDistrict(district District) {
 	for i, v := range c.districts {
-		if v.GetDistrictId() == district.GetDistrictId() {
+		if v.GetName() == district.GetName() {
 			c.districts = append(c.districts[:i], c.districts[i+1:]...)
 		}
 	}
@@ -148,7 +143,7 @@ func (c *City) AddParking(newParking *Parking) {
 
 func (c *City) DelParking(parking Parking) {
 	for i, v := range c.parkings {
-		if v.GetParkingId() == parking.GetParkingId() {
+		if v.GetId() == parking.GetId() {
 			c.parkings = append(c.parkings[:i], c.parkings[i+1:]...)
 		}
 	}

@@ -2,28 +2,18 @@ package MonacoParking
 
 import (
 	"DeathStar/models/objects"
+	"DeathStar/models/tools"
 )
 
 func InitMonacoParkings() {
+	monacoParking := objects.NewOwner("MonacoParking")
 	monaco := objects.GetLiveDB().GetCity("Monaco")
 
-	// Parse XML
-	s := parseXml()
+	parkings := tools.ParseParkingsXml("./models/cities/monaco/MonacoParking/parkings.xml")
 
-	// Create new owner
-	monacoParking := objects.NewOwner("MonacoParking")
-	objects.GetLiveDB().AddOwner(monacoParking)
-
-	// Add districts and parkings TODO owner and district reference
-	for _, d := range s.Quartier {
-		newDistrict := objects.NewDistrict(d.NomQuartier, monaco)
-		for _, p := range d.Parc {
-			newParking := objects.NewParking(p.LibelleParc, monacoParking, newDistrict, 0)
-			monaco.AddParking(newParking)
-			monacoParking.AddParking(newParking)
-			newDistrict.AddParking(newParking)
-		}
-		monaco.AddDistrict(newDistrict)
+	// Add parkings
+	for _, d := range parkings.Parkings {
+		objects.NewParking(d.Id, d.Name, monacoParking, monaco.GetDistrict(d.District), monaco, d.SpacesCount)
 	}
 }
 
@@ -31,16 +21,16 @@ func UpdateMonacoParkings() {
 	monaco := objects.GetLiveDB().GetCity("Monaco")
 
 	// Parse XML
-	s := parseXml()
+	s := dlParseXml()
 
 	// Update parkings values
 	for _, v := range s.Quartier {
 		for _, p := range v.Parc {
-			parkingToUpdate := monaco.GetParking(p.LibelleParc)
+			parkingToUpdate := monaco.GetParking(p.NumParc)
 
-			parkingToUpdate.SetSpacesCount(p.Presents.PresentsTotal + p.PlacesLibresParc)
 			parkingToUpdate.SetFreeSpacesCount(p.PlacesLibresParc)
-			parkingToUpdate.SetOccSpacesCount(p.Presents.PresentsTotal)
+			parkingToUpdate.SetOccSpacesCount(p.Presents.PresentsAbonnes + p.Presents.PresentsHoraires)
+			parkingToUpdate.SetSpacesCount(parkingToUpdate.GetOccSpacesCount() + parkingToUpdate.GetFreeSpacesCount())
 			parkingToUpdate.SetStatus(p.StatusParc)
 		}
 	}

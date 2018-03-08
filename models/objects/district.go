@@ -1,27 +1,21 @@
 package objects
 
 import (
-	"DeathStar/models/tools"
 	"fmt"
 )
 
 type District struct {
-	districtId string
-	name       string
-	city       *City
-	parkings   []Parking
-	spacesCount       int
-	freeSpacesCount   int
-	occSpacesCount    int
+	name            string
+	city            *City
+	spacesCount     int
+	freeSpacesCount int
+	occSpacesCount  int
 }
 
 func NewDistrict(name string, city *City) *District {
-	newDistrict := District{tools.GenerateId("DI"), name, city, make([]Parking, 0), 0, 0, 0}
+	newDistrict := District{name, city, 0, 0, 0}
+	GetLiveDB().GetCity(city.name).AddDistrict(&newDistrict)
 	return &newDistrict
-}
-
-func (d *District) GetDistrictId() string {
-	return d.districtId
 }
 
 func (d *District) GetName() string {
@@ -30,10 +24,6 @@ func (d *District) GetName() string {
 
 func (d *District) GetCity() *City {
 	return d.city
-}
-
-func (d *District) GetParkings() *[]Parking {
-	return &d.parkings
 }
 
 func (d *District) GetSpacesCount() int {
@@ -56,10 +46,6 @@ func (d *District) SetCity(newCity *City) {
 	d.city = newCity
 }
 
-func (d *District) SetParkings(newParkingSlice *[]Parking) {
-	d.parkings = *newParkingSlice
-}
-
 func (d *District) SetSpacesCount(newSpacesCount int) {
 	d.spacesCount = newSpacesCount
 }
@@ -73,25 +59,13 @@ func (d *District) SetOccSpacesCount(newOccSpacesCount int) {
 }
 
 func (d District) String() string {
-	return fmt.Sprintf("[ID]: '%s' | [Name]: '%s' | [City]: '%s'| [SpacesCount]: '%d' |" +
-		" [FreeSpacesCount]: '%d' | [OccSpacesCount]: '%d' ", d.districtId, d.name, d.city.GetName(),
+	return fmt.Sprintf("[Name]: '%s' | [City]: '%s'| [SpacesCount]: '%d' |" +
+		" [FreeSpacesCount]: '%d' | [OccSpacesCount]: '%d' ", d.name, d.city.GetName(),
 			d.spacesCount, d.freeSpacesCount, d.occSpacesCount)
 }
 
-func (d *District) AddParking(newParking *Parking) {
-	d.parkings = append(d.parkings, *newParking)
-}
-
-func (d *District) DelParking(parking Parking) {
-	for i, v := range d.parkings {
-		if v.GetParkingId() == parking.GetParkingId() {
-			d.parkings = append(d.parkings[:i], d.parkings[i+1:]...)
-		}
-	}
-}
-
 func (d *District) UpdateDistrict() {
-	newSpacesCount := 0
+	/*newSpacesCount := 0
 	newFreeSpacesCount := 0
 	newOccSpacesCount := 0
 
@@ -103,5 +77,5 @@ func (d *District) UpdateDistrict() {
 
 	d.spacesCount = newSpacesCount
 	d.freeSpacesCount = newFreeSpacesCount
-	d.occSpacesCount = newOccSpacesCount
+	d.occSpacesCount = newOccSpacesCount*/
 }

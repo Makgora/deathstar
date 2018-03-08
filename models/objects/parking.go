@@ -1,16 +1,16 @@
 package objects
 
 import (
-	"DeathStar/models/tools"
 	"fmt"
 )
 
 type Parking struct {
-	parkingId         string
+	id                string
 	name              string
 	owner             *Owner
 	district          *District
-	status			  string
+	city			  *City
+	status            string
 	spacesCount       int
 	freeSpacesCount   int
 	occSpacesCount    int
@@ -18,13 +18,14 @@ type Parking struct {
 	dayOccSpacesCount int
 }
 
-func NewParking(name string, owner *Owner, district *District, spacesCount int) *Parking {
-	newParking := Parking{tools.GenerateId("PA"), name, owner, district, "", spacesCount, 0, 0, 0, 0}
+func NewParking(id string, name string, owner *Owner, district *District, city *City, spacesCount int) *Parking {
+	newParking := Parking{id, name, owner, district, city, "", spacesCount, 0, 0, 0, 0}
+	GetLiveDB().GetCity(city.name).AddParking(&newParking)
 	return &newParking
 }
 
-func (p *Parking) GetParkingId() string {
-	return p.parkingId
+func (p *Parking) GetId() string {
+	return p.id
 }
 
 func (p *Parking) GetName() string {
@@ -103,6 +104,6 @@ func (p Parking) String() string {
 	return fmt.Sprintf("[ID]: '%s' | [Name]: '%s' | [Owner]: '%s' "+
 		"| [District]: '%s'| [Status]: %s | [SpacesCount]: '%d' | [FreeSpacesCount]: '%d' "+
 		"| [OccSpacesCount]: '%d' | [SubOccSpacesCount]: '%d' | [DayOccSpacesCount]: '%d'",
-		p.parkingId, p.name, p.owner.GetName(), p.district.GetName(), p.status, p.spacesCount,
+		p.id, p.name, p.owner.GetName(), p.district.GetName(), p.status, p.spacesCount,
 		p.freeSpacesCount, p.occSpacesCount, p.subOccSpacesCount, p.dayOccSpacesCount)
 }

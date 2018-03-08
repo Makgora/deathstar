@@ -2,16 +2,13 @@ package system
 
 import (
 	"DeathStar/models/cities"
+	"time"
+	"log"
 )
 
 func Run() {
 	initSystem()
 	updateSystem()
-/*
-	for true {
-		updateSystem()
-		time.Sleep(time.Second * 10)
-	}*/
 }
 
 func initSystem() {
@@ -19,5 +16,11 @@ func initSystem() {
 }
 
 func updateSystem() {
-	cities.UpdateCities()
+	go func() {
+		for {
+			//log.Println("Data Update")
+			cities.UpdateCities()
+			<-time.NewTimer(time.Second * 5).C
+		}
+	}()
 }

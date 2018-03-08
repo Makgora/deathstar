@@ -1,0 +1,398 @@
+<Parkings>
+    <Parking>
+        <Id>124</Id>
+        <Name>Parking Ecole RDC</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Fontvieille</District>
+        <SpacesCount>68</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>13</Id>
+        <Name>Parking Papalins</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Fontvieille</District>
+        <SpacesCount>279</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>14</Id>
+        <Name>Parking du Stade</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Fontvieille</District>
+        <SpacesCount>1014</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>21</Id>
+        <Name>Parking du Port</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Fontvieille</District>
+        <SpacesCount>143</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>24</Id>
+        <Name>Parking des Ecoles</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Fontvieille</District>
+        <SpacesCount>68</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>25</Id>
+        <Name>Parking St-Nicolas</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Fontvieille</District>
+        <SpacesCount>88</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>29</Id>
+        <Name>Parking Heliport</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Fontvieille</District>
+        <SpacesCount>72</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>30</Id>
+        <Name>Parking du C.C.F</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Fontvieille</District>
+        <SpacesCount>569</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>52</Id>
+        <Name>Parking St-Antoine</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Fontvieille</District>
+        <SpacesCount>405</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>104</Id>
+        <Name>Parking Grimaldi Forum Bus</Name>
+        <Owner>MonacoParking</Owner>
+        <District>I-Cars</District>
+        <SpacesCount>38</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>112</Id>
+        <Name>Parking des Pecheurs Bus</Name>
+        <Owner>MonacoParking</Owner>
+        <District>I-Cars</District>
+        <SpacesCount>52</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>19</Id>
+        <Name>Parking Regulation Bus</Name>
+        <Owner>MonacoParking</Owner>
+        <District>I-Cars</District>
+        <SpacesCount>0</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>127</Id>
+        <Name>Parking CHPG 2 (Bas)</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Jardin-Exotique</District>
+        <SpacesCount>270</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>16</Id>
+        <Name>Parking du Jardin Exotique</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Jardin-Exotique</District>
+        <SpacesCount>380</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>27</Id>
+        <Name>Parking CHPG 1 (Haut)</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Jardin-Exotique</District>
+        <SpacesCount>120</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>34</Id>
+        <Name>Parking de la Gare</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Jardin-Exotique</District>
+        <SpacesCount>701</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>45</Id>
+        <Name>Parking Athena</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Jardin-Exotique</District>
+        <SpacesCount>12</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>46</Id>
+        <Name>Parking des Oliviers</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Jardin-Exotique</District>
+        <SpacesCount>27</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>60</Id>
+        <Name>Parking Engelin</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Jardin-Exotique</District>
+        <SpacesCount>55</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>7</Id>
+        <Name>Parking du Bosio</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Jardin-Exotique</District>
+        <SpacesCount>277</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>8</Id>
+        <Name>Parking du Plati</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Jardin-Exotique</District>
+        <SpacesCount>37</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>5</Id>
+        <Name>Parking Annonciade</Name>
+        <Owner>MonacoParking</Owner>
+        <District>La Rousse</District>
+        <SpacesCount>147</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>3</Id>
+        <Name>Parking Larvotto</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Larvotto</District>
+        <SpacesCount>348</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>38</Id>
+        <Name>Parking des Carmes</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Larvotto</District>
+        <SpacesCount>58</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>4</Id>
+        <Name>Parking du Grimaldi Forum</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Larvotto</District>
+        <SpacesCount>584</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>43</Id>
+        <Name>Parking de Testimonio</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Larvotto</District>
+        <SpacesCount>78</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>12</Id>
+        <Name>Parking des Pecheurs</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Le Rocher</District>
+        <SpacesCount>489</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>17</Id>
+        <Name>Parking Abbaye</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Le Rocher</District>
+        <SpacesCount>21</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>2</Id>
+        <Name>Parking de la Visitation</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Le Rocher</District>
+        <SpacesCount>42</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>41</Id>
+        <Name>Parking de la Digue</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Le Rocher</District>
+        <SpacesCount>267</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>1</Id>
+        <Name>Parking des Moulins</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Monte-Carlo</District>
+        <SpacesCount>296</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>15</Id>
+        <Name>Parking Costa</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Monte-Carlo</District>
+        <SpacesCount>187</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>22</Id>
+        <Name>Parking du Casino</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Monte-Carlo</District>
+        <SpacesCount>662</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>26</Id>
+        <Name>Parking St-Charles</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Monte-Carlo</District>
+        <SpacesCount>332</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>33</Id>
+        <Name>Parking St-Laurent</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Monte-Carlo</District>
+        <SpacesCount>184</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>42</Id>
+        <Name>Parking Ostende</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Monte-Carlo</District>
+        <SpacesCount>148</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>44</Id>
+        <Name>Parking de Roqueville</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Monte-Carlo</District>
+        <SpacesCount>237</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>6</Id>
+        <Name>Parking de Louis II</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Monte-Carlo</District>
+        <SpacesCount>104</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>28</Id>
+        <Name>Parking de la 3</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Condamine</District>
+        <SpacesCount>318</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>31</Id>
+        <Name>Parking Place d'Armes</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Condamine</District>
+        <SpacesCount>53</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>32</Id>
+        <Name>Parking Quai Antoine 1er</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Condamine</District>
+        <SpacesCount>227</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>36</Id>
+        <Name>Parking du Square Gastaud</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Condamine</District>
+        <SpacesCount>216</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>39</Id>
+        <Name>Parking des Agaves</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Condamine</District>
+        <SpacesCount>79</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+    <Parking>
+        <Id>9</Id>
+        <Name>Parking de la Colle</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Condamine</District>
+        <SpacesCount>432</SpacesCount>
+        <Address>Address</Address>
+        <Description>Description</Description>
+    </Parking>
+</Parkings>

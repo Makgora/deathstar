@@ -1,0 +1,12 @@
+#Scripts
+#*.sh
+
+#Vim temp files
+*.swp
+
+#Text files
+*.txt
+
+#Goland files
+.idea/
+*.iml
