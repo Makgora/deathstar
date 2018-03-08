@@ -10,3 +10,6 @@
 #Goland files
 .idea/
 *.iml
+
+#Project files
+places.xml

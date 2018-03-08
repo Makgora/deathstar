@@ -3,7 +3,6 @@ package system
 import (
 	"DeathStar/models/cities"
 	"time"
-	"log"
 )
 
 func Run() {

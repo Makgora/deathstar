@@ -38,6 +38,18 @@ func (d *District) GetOccSpacesCount() int {
 	return d.occSpacesCount
 }
 
+func (d *District) GetParkings() []Parking {
+	parkings := make([]Parking, 0)
+	allParkings := GetLiveDB().GetCity(d.city.name).parkings
+
+	for i := range allParkings {
+		if allParkings[i].district.name == d.name {
+			parkings = append(parkings, allParkings[i])
+		}
+	}
+	return parkings
+}
+
 func (d *District) SetName(newName string) {
 	d.name = newName
 }
@@ -59,23 +71,19 @@ func (d *District) SetOccSpacesCount(newOccSpacesCount int) {
 }
 
 func (d District) String() string {
-	return fmt.Sprintf("[Name]: '%s' | [City]: '%s'| [SpacesCount]: '%d' |" +
+	return fmt.Sprintf("[Name]: '%s' | [City]: '%s'| [SpacesCount]: '%d' |"+
 		" [FreeSpacesCount]: '%d' | [OccSpacesCount]: '%d' ", d.name, d.city.GetName(),
-			d.spacesCount, d.freeSpacesCount, d.occSpacesCount)
+		d.spacesCount, d.freeSpacesCount, d.occSpacesCount)
 }
 
 func (d *District) UpdateDistrict() {
-	/*newSpacesCount := 0
-	newFreeSpacesCount := 0
-	newOccSpacesCount := 0
+	d.spacesCount = 0
+	d.freeSpacesCount = 0
+	d.occSpacesCount = 0
 
-	for _, v := range d.parkings {
-		newSpacesCount += v.spacesCount
-		newFreeSpacesCount += v.freeSpacesCount
-		newOccSpacesCount += v.occSpacesCount
+	for _, v := range d.GetParkings() {
+		d.spacesCount += v.spacesCount
+		d.freeSpacesCount += v.freeSpacesCount
+		d.occSpacesCount += v.occSpacesCount
 	}
-
-	d.spacesCount = newSpacesCount
-	d.freeSpacesCount = newFreeSpacesCount
-	d.occSpacesCount = newOccSpacesCount*/
 }

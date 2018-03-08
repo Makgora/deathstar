@@ -5,14 +5,14 @@ import (
 	"encoding/xml"
 	"fmt"
 	"io/ioutil"
-	"os/exec"
+	"strings"
 )
 
 type presents struct {
 	PresentsUpdate   string `xml:"presentsUpdate"`
 	PresentsTotal    int    `xml:"presentsTotal"`
-	PresentsAbonnes  int 	`xml:"presentsAbonnes"`
-	PresentsHoraires int 	`xml:"presentsHoraires"`
+	PresentsAbonnes  int    `xml:"presentsAbonnes"`
+	PresentsHoraires int    `xml:"presentsHoraires"`
 }
 
 type parc struct {
@@ -47,18 +47,14 @@ func dlParseXml() xmlStruct {
 	// Download places.xml
 	tools.DownloadFile(filePath, url)
 
-	// Delete 'Obsolete'
-	cmd := exec.Command("sed", "-i", "--", "s/Obsolete/0/g", "./models/cities/monaco/MonacoParking/places.xml")
-	err := cmd.Run()
-	tools.Check(err)
-
 	// Open and read places.xml
 	xmlData, err := ioutil.ReadFile(filePath)
 	tools.Check(err)
 
 	// Delete first line to avoid encoding error
 	xmlData = xmlData[44:]
-
+	// Replace 'Obsolete' by O to allow int conversion
+	xmlData = []byte(strings.Replace(string(xmlData), "Obsolete", "0", -1))
 
 	// Parse xmlData
 	s := xmlStruct{}

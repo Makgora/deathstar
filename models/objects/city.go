@@ -6,12 +6,12 @@ import (
 )
 
 type City struct {
-	name      string
-	parkings	[]Parking
-	districts	[]District
-	spacesCount       int
-	freeSpacesCount   int
-	occSpacesCount    int
+	name            string
+	parkings        []Parking
+	districts       []District
+	spacesCount     int
+	freeSpacesCount int
+	occSpacesCount  int
 }
 
 func NewCity(name string) *City {
@@ -29,9 +29,9 @@ func (c *City) GetDistricts() *[]District {
 }
 
 func (c *City) GetDistrict(districtName string) *District {
-	for i, _ := range c.districts {
+	for i := range c.districts {
 		if c.districts[i].name == districtName {
-			return  &c.districts[i]
+			return &c.districts[i]
 		}
 	}
 	return nil
@@ -54,7 +54,7 @@ func (c *City) GetParkings() *[]Parking {
 }
 
 func (c *City) GetParking(parkingId string) *Parking {
-	for i, _ := range c.parkings {
+	for i := range c.parkings {
 		if c.parkings[i].id == parkingId {
 			return &c.parkings[i]
 		}
@@ -82,13 +82,13 @@ func (c City) String() []string {
 	var s = make([]string, 0)
 	for _, p := range c.parkings {
 		//s = append(s, "IDParking: " + p.id)
-		s = append(s, "NomParc: " + p.name)
-		s = append(s,"Quartier: " + p.district.name)
-		s = append(s, "Owner: " + p.owner.name)
-		s = append(s, "StatusParc: " + p.status)
-		s = append(s, "TotalParc: " +  strconv.Itoa(p.spacesCount))
-		s = append(s, "PresentsParc: " + strconv.Itoa(p.occSpacesCount))
-		s = append(s, "LibreParc: " + strconv.Itoa(p.freeSpacesCount))
+		s = append(s, "NomParc: "+p.name)
+		s = append(s, "Quartier: "+p.district.name)
+		s = append(s, "Owner: "+p.owner.name)
+		s = append(s, "StatusParc: "+p.status)
+		s = append(s, "TotalParc: "+strconv.Itoa(p.spacesCount))
+		s = append(s, "PresentsParc: "+strconv.Itoa(p.occSpacesCount))
+		s = append(s, "LibreParc: "+strconv.Itoa(p.freeSpacesCount))
 		s = append(s, "")
 	}
 	return s
@@ -124,7 +124,6 @@ func (c City) PrintCity() {
 	}
 }
 
-
 func (c *City) AddDistrict(newDistrict *District) {
 	c.districts = append(c.districts, *newDistrict)
 }
@@ -150,17 +149,19 @@ func (c *City) DelParking(parking Parking) {
 }
 
 func (c *City) UpdateCity() {
-	newSpacesCount := 0
-	newFreeSpacesCount := 0
-	newOccSpacesCount := 0
-
-	for i, _ := range c.parkings {
-		//c.districts[i].UpdateDistrict()
-		newSpacesCount += c.parkings[i].spacesCount
-		newFreeSpacesCount += c.parkings[i].freeSpacesCount
-		newOccSpacesCount += c.parkings[i].occSpacesCount
+	// Update Districts
+	for i := range c.districts {
+		c.districts[i].UpdateDistrict()
 	}
-	c.spacesCount = newSpacesCount
-	c.freeSpacesCount = newFreeSpacesCount
-	c.occSpacesCount = newOccSpacesCount
+
+	// Update Monaco
+	c.spacesCount = 0
+	c.freeSpacesCount = 0
+	c.occSpacesCount = 0
+
+	for _, v := range c.districts {
+		c.spacesCount += v.spacesCount
+		c.freeSpacesCount += v.freeSpacesCount
+		c.occSpacesCount += v.occSpacesCount
+	}
 }

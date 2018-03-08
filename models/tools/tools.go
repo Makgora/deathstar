@@ -3,8 +3,10 @@ package tools
 import (
 	"github.com/rs/xid"
 	"io"
+	"log"
 	"net/http"
 	"os"
+	"time"
 )
 
 func GenerateId(codeObject string) string {
@@ -38,4 +40,9 @@ func DownloadFile(filePath string, url string) {
 	// Write the body to file
 	_, err = io.Copy(out, resp.Body)
 	Check(err)
+}
+
+func TimeTaken(t time.Time, name string) {
+	elapsed := time.Since(t)
+	log.Printf("TIME: %s took %s\n", name, elapsed)
 }
