@@ -1,13 +1,13 @@
 package monaco
 
 import (
-	"DeathStar/models/objects"
 	. "DeathStar/models/cities/monaco/MonacoParking"
+	"DeathStar/models/objects"
 	"DeathStar/models/tools"
 )
 
 func InitMonaco() {
-	objects.NewCity("Monaco")
+	objects.NewCity("Monaco", 43.737571, 7.420788)
 	monaco := objects.GetLiveDB().GetCity("Monaco")
 
 	// Init districts
@@ -31,4 +31,3 @@ func UpdateMonaco() {
 	// Update Monaco
 	objects.GetLiveDB().GetCity("Monaco").UpdateCity()
 }
-

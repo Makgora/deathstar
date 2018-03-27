@@ -11,7 +11,7 @@ type district struct {
 }
 
 type DistrictsXml struct {
-	XMLName   xml.Name `xml:"Districts"`
+	XMLName   xml.Name   `xml:"Districts"`
 	Districts []district `xml:"District"`
 }
 
@@ -39,11 +39,13 @@ type parking struct {
 	District    string `xml:"District"`
 	SpacesCount int    `xml:"SpacesCount"`
 	Address     string `xml:"Address"`
+	Lat			float32 `xml:"Lat"`
+	Lng			float32 `xml:"Lng"`
 	Description string `xml:"Description"`
 }
 
 type ParkingsXml struct {
-	XMLName   xml.Name `xml:"Parkings"`
+	XMLName  xml.Name  `xml:"Parkings"`
 	Parkings []parking `xml:"Parking"`
 }
 

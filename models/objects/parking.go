@@ -7,9 +7,11 @@ import (
 type Parking struct {
 	id                string
 	name              string
+	address           string
+	location		  Location
 	owner             *Owner
 	district          *District
-	city			  *City
+	city              *City
 	status            string
 	spacesCount       int
 	freeSpacesCount   int
@@ -18,8 +20,8 @@ type Parking struct {
 	dayOccSpacesCount int
 }
 
-func NewParking(id string, name string, owner *Owner, district *District, city *City, spacesCount int) *Parking {
-	newParking := Parking{id, name, owner, district, city, "", spacesCount, 0, 0, 0, 0}
+func NewParking(id string, name string, address string, lat float32, lng float32, owner *Owner, district *District, city *City, spacesCount int) *Parking {
+	newParking := Parking{id, name, address, NewLocation(lat, lng), owner, district, city, "", spacesCount, 0, 0, 0, 0}
 	GetLiveDB().GetCity(city.name).AddParking(&newParking)
 	return &newParking
 }
@@ -30,6 +32,14 @@ func (p *Parking) GetId() string {
 
 func (p *Parking) GetName() string {
 	return p.name
+}
+
+func (p *Parking) GetAddress() string {
+	return p.address
+}
+
+func (p *Parking) GetLocation() Location {
+	return p.location
 }
 
 func (p *Parking) GetOwner() *Owner {
@@ -66,6 +76,10 @@ func (p *Parking) GetDayOccSpacesCount() int {
 
 func (p *Parking) SetName(newName string) {
 	p.name = newName
+}
+
+func (p *Parking) SetParking(newAddress string) {
+	p.address = newAddress
 }
 
 func (p *Parking) SetOwner(newOwner *Owner) {

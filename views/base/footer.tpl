@@ -1,14 +1,11 @@
-{{define "footer"}}
-<footer>
-    <div class="author">
-        Official website:
-        <a href="http://{{.Website}}">{{.Website}}</a>
-        <br>
-        Contact me:
-        <a class="email" href="mailto:{{.Email}}">{{.Email}}</a>
+<footer class="footer" style="margin-top: 100px">
+    <div class="container text-center">
+        <span class="text-muted">
+            Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            Parked
+        </span>
     </div>
 </footer>
-<script src="/static/js/reload.min.js"></script>
-</body>
-</html>
-{{end}}

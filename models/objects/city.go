@@ -3,19 +3,22 @@ package objects
 import (
 	"fmt"
 	"strconv"
+	"time"
 )
 
 type City struct {
 	name            string
 	parkings        []Parking
 	districts       []District
+	location		Location
 	spacesCount     int
 	freeSpacesCount int
 	occSpacesCount  int
+	lastUpdate		time.Time
 }
 
-func NewCity(name string) *City {
-	newCity := City{name, make([]Parking, 0), make([]District, 0), 0, 0, 0}
+func NewCity(name string, lat float32, lng float32) *City {
+	newCity := City{name, make([]Parking, 0), make([]District, 0), NewLocation(lat, lng), 0, 0, 0, time.Now()}
 	GetLiveDB().AddCity(&newCity)
 	return &newCity
 }
@@ -35,6 +38,10 @@ func (c *City) GetDistrict(districtName string) *District {
 		}
 	}
 	return nil
+}
+
+func (c *City) GetLocation() *Location {
+	return &c.location
 }
 
 func (c *City) GetSpacesCount() int {
@@ -60,6 +67,10 @@ func (c *City) GetParking(parkingId string) *Parking {
 		}
 	}
 	return nil
+}
+
+func (c *City) GetLastUpdate() time.Time {
+	return c.lastUpdate
 }
 
 func (c *City) SetName(newName string) {
@@ -164,4 +175,5 @@ func (c *City) UpdateCity() {
 		c.freeSpacesCount += v.freeSpacesCount
 		c.occSpacesCount += v.occSpacesCount
 	}
+	c.lastUpdate = time.Now()
 }

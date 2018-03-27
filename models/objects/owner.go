@@ -5,7 +5,7 @@ import (
 )
 
 type Owner struct {
-	name     string
+	name string
 }
 
 func NewOwner(name string) *Owner {
@@ -25,4 +25,3 @@ func (o *Owner) SetName(newName string) {
 func (o Owner) String() string {
 	return fmt.Sprintf("[Name]: '%s'", o.name)
 }
-

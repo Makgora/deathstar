@@ -1,0 +1,40 @@
+body { padding-top: 80px; }
+
+/* Map on right in home page */
+#map {
+    height: 500px;
+}
+
+/* Parkings div on left in home page */
+#parkings {
+    overflow: auto;
+    height: 500px;
+}
+
+#update {
+    padding-left: 10px;
+}
+
+.parking {
+    height: auto;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-bottom: 5px;
+    margin-bottom: 9px;
+    box-shadow: 5px 5px 5px -5px #333;
+}
+
+/* A simple class to add a margin on top */
+.mgt {
+    margin-top: 50px;
+}
+
+/* A simple class to add a margin on bot */
+.mgb {
+    margin-bottom: 50px;
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+}

@@ -1,111 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <Parkings>
     <Parking>
-        <Id>124</Id>
-        <Name>Parking Ecole RDC</Name>
+        <Id>5</Id>
+        <Name>Parking de l'Annonciade</Name>
         <Owner>MonacoParking</Owner>
-        <District>Fontvieille</District>
-        <SpacesCount>68</SpacesCount>
-        <Address>Address</Address>
+        <District>La Rousse</District>
+        <SpacesCount>160</SpacesCount>
+        <Address>9 Chemin des Oeillets, 98000 Monaco</Address>
+        <Lat>43.7472691</Lat>
+        <Lng>7.43075859999999</Lng>
         <Description>Description</Description>
+        <Handi>0</Handi>
+        <Echarge>0</Echarge>
+        <Moto>1</Moto>
     </Parking>
     <Parking>
-        <Id>13</Id>
-        <Name>Parking Papalins</Name>
+        <Id>7</Id>
+        <Name>Parking du Bosio</Name>
         <Owner>MonacoParking</Owner>
-        <District>Fontvieille</District>
-        <SpacesCount>279</SpacesCount>
-        <Address>Address</Address>
+        <District>Jardin-Exotique</District>
+        <SpacesCount>331</SpacesCount>
+        <Address>2 Rue J.F. Bosio, 98000 Monaco-Ville, Monaco</Address>
+        <Lat>43.7364484</Lat>
+        <Lng>7.418860799999948</Lng>
         <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>14</Id>
-        <Name>Parking du Stade</Name>
-        <Owner>MonacoParking</Owner>
-        <District>Fontvieille</District>
-        <SpacesCount>1014</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>21</Id>
-        <Name>Parking du Port</Name>
-        <Owner>MonacoParking</Owner>
-        <District>Fontvieille</District>
-        <SpacesCount>143</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>24</Id>
-        <Name>Parking des Ecoles</Name>
-        <Owner>MonacoParking</Owner>
-        <District>Fontvieille</District>
-        <SpacesCount>68</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>25</Id>
-        <Name>Parking St-Nicolas</Name>
-        <Owner>MonacoParking</Owner>
-        <District>Fontvieille</District>
-        <SpacesCount>88</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>29</Id>
-        <Name>Parking Heliport</Name>
-        <Owner>MonacoParking</Owner>
-        <District>Fontvieille</District>
-        <SpacesCount>72</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
     </Parking>
     <Parking>
         <Id>30</Id>
         <Name>Parking du C.C.F</Name>
         <Owner>MonacoParking</Owner>
         <District>Fontvieille</District>
-        <SpacesCount>569</SpacesCount>
-        <Address>Address</Address>
+        <SpacesCount>560</SpacesCount>
+        <Address>Parking Centre Commercial de Fontvieille - Avenue Albert II, 98000 Monaco</Address>
+        <Lat>43.7307938</Lat>
+        <Lng>7.417777800000067</Lng>
         <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
     </Parking>
     <Parking>
-        <Id>52</Id>
-        <Name>Parking St-Antoine</Name>
+        <Id>22</Id>
+        <Name>Parking du Casino</Name>
         <Owner>MonacoParking</Owner>
-        <District>Fontvieille</District>
-        <SpacesCount>405</SpacesCount>
-        <Address>Address</Address>
+        <District>Monte-Carlo</District>
+        <SpacesCount>695</SpacesCount>
+        <Address>Allée des Boulingrins, 98000 Monaco</Address>
+        <Lat>43.739902</Lat>
+        <Lng>7.427348</Lng>
         <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>104</Id>
-        <Name>Parking Grimaldi Forum Bus</Name>
-        <Owner>MonacoParking</Owner>
-        <District>I-Cars</District>
-        <SpacesCount>38</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>112</Id>
-        <Name>Parking des Pecheurs Bus</Name>
-        <Owner>MonacoParking</Owner>
-        <District>I-Cars</District>
-        <SpacesCount>52</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>19</Id>
-        <Name>Parking Regulation Bus</Name>
-        <Owner>MonacoParking</Owner>
-        <District>I-Cars</District>
-        <SpacesCount>0</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
     </Parking>
     <Parking>
         <Id>127</Id>
@@ -113,44 +62,41 @@
         <Owner>MonacoParking</Owner>
         <District>Jardin-Exotique</District>
         <SpacesCount>270</SpacesCount>
-        <Address>Address</Address>
+        <Address>1 Avenue Pasteur, 98000 Monaco</Address>
+        <Lat>43.7307977</Lat>
+        <Lng>7.412696399999959</Lng>
         <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
     </Parking>
     <Parking>
-        <Id>16</Id>
-        <Name>Parking du Jardin Exotique</Name>
+        <Id>28</Id>
+        <Name>Parking de la Condamine</Name>
         <Owner>MonacoParking</Owner>
-        <District>Jardin-Exotique</District>
-        <SpacesCount>380</SpacesCount>
-        <Address>Address</Address>
+        <District>La Condamine</District>
+        <SpacesCount>408</SpacesCount>
+        <Address>11 Avenue du Port, 98000 Monaco</Address>
+        <Lat>43.7321274</Lat>
+        <Lng>7.421634600000061</Lng>
         <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
     </Parking>
     <Parking>
-        <Id>27</Id>
-        <Name>Parking CHPG 1 (Haut)</Name>
+        <Id>15</Id>
+        <Name>Parking Costa</Name>
         <Owner>MonacoParking</Owner>
-        <District>Jardin-Exotique</District>
-        <SpacesCount>120</SpacesCount>
-        <Address>Address</Address>
+        <District>Monte-Carlo</District>
+        <SpacesCount>199</SpacesCount>
+        <Address>2 Avenue de la Costa, 98000 Monaco</Address>
+        <Lat>43.7374398</Lat>
+        <Lng>7.423538699999995</Lng>
         <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>34</Id>
-        <Name>Parking de la Gare</Name>
-        <Owner>MonacoParking</Owner>
-        <District>Jardin-Exotique</District>
-        <SpacesCount>701</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>45</Id>
-        <Name>Parking Athena</Name>
-        <Owner>MonacoParking</Owner>
-        <District>Jardin-Exotique</District>
-        <SpacesCount>12</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
     </Parking>
     <Parking>
         <Id>46</Id>
@@ -158,241 +104,376 @@
         <Owner>MonacoParking</Owner>
         <District>Jardin-Exotique</District>
         <SpacesCount>27</SpacesCount>
-        <Address>Address</Address>
+        <Address>33 Boulevard de Belgique, 98000 Monaco</Address>
+        <Lat>43.7317557</Lat>
+        <Lng>7.414774299999976</Lng>
         <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>0</Echarge>
+        <Moto>0</Moto>
     </Parking>
     <Parking>
-        <Id>60</Id>
-        <Name>Parking Engelin</Name>
+        <Id>124</Id>
+        <Name>Parking Ecole RDC</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Fontvieille</District>
+        <SpacesCount>77</SpacesCount>
+        <Address>3 Avenue des Guelfes, 98000 Monaco</Address>
+        <Lat>43.7264561</Lat>
+        <Lng>7.416947100000016</Lng>
+        <Description>Description</Description>
+        <Handi>0</Handi>
+        <Echarge>1</Echarge>
+        <Moto>0</Moto>
+    </Parking>
+    <Parking>
+        <Id>34</Id>
+        <Name>Parking de la Gare</Name>
         <Owner>MonacoParking</Owner>
         <District>Jardin-Exotique</District>
-        <SpacesCount>55</SpacesCount>
-        <Address>Address</Address>
+        <SpacesCount>731</SpacesCount>
+        <Address>4 Avenue d&apos;Alsace, Beausoleil 98000, Monaco</Address>
+        <Lat>43.73895100000001</Lat>
+        <Lng>7.418245200000001</Lng>
         <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>7</Id>
-        <Name>Parking du Bosio</Name>
-        <Owner>MonacoParking</Owner>
-        <District>Jardin-Exotique</District>
-        <SpacesCount>277</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>8</Id>
-        <Name>Parking du Plati</Name>
-        <Owner>MonacoParking</Owner>
-        <District>Jardin-Exotique</District>
-        <SpacesCount>37</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>5</Id>
-        <Name>Parking Annonciade</Name>
-        <Owner>MonacoParking</Owner>
-        <District>La Rousse</District>
-        <SpacesCount>147</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>3</Id>
-        <Name>Parking Larvotto</Name>
-        <Owner>MonacoParking</Owner>
-        <District>Larvotto</District>
-        <SpacesCount>348</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>38</Id>
-        <Name>Parking des Carmes</Name>
-        <Owner>MonacoParking</Owner>
-        <District>Larvotto</District>
-        <SpacesCount>58</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>0</Moto>
     </Parking>
     <Parking>
         <Id>4</Id>
         <Name>Parking du Grimaldi Forum</Name>
         <Owner>MonacoParking</Owner>
         <District>Larvotto</District>
-        <SpacesCount>584</SpacesCount>
-        <Address>Address</Address>
+        <SpacesCount>621</SpacesCount>
+        <Address>10 Av. Princesse Grace, 98000 Monaco</Address>
+        <Lat>43.7440913</Lat>
+        <Lng>7.431520299999988</Lng>
         <Description>Description</Description>
+        <Handi>0</Handi>
+        <Echarge>0</Echarge>
+        <Moto>0</Moto>
     </Parking>
     <Parking>
-        <Id>43</Id>
-        <Name>Parking de Testimonio</Name>
+        <Id>29</Id>
+        <Name>Parking Heliport</Name>
         <Owner>MonacoParking</Owner>
-        <District>Larvotto</District>
-        <SpacesCount>78</SpacesCount>
-        <Address>Address</Address>
+        <District>Fontvieille</District>
+        <SpacesCount>107</SpacesCount>
+        <Address>9 Avenue des Ligures, 98000 Monaco-Ville, Monaco</Address>
+        <Lat>43.72563770000001</Lat>
+        <Lng>7.41839159999995</Lng>
         <Description>Description</Description>
+        <Handi>0</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
     </Parking>
     <Parking>
-        <Id>12</Id>
-        <Name>Parking des Pecheurs</Name>
+        <Id>16</Id>
+        <Name>Parking du Jardin Exotique</Name>
         <Owner>MonacoParking</Owner>
-        <District>Le Rocher</District>
-        <SpacesCount>489</SpacesCount>
-        <Address>Address</Address>
+        <District>Jardin-Exotique</District>
+        <SpacesCount>411</SpacesCount>
+        <Address>25 Boulevard de Belgique, 98000 Monaco</Address>
+        <Lat>43.7337913</Lat>
+        <Lng>7.416104200000063</Lng>
         <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
     </Parking>
     <Parking>
-        <Id>17</Id>
-        <Name>Parking Abbaye</Name>
+        <Id>9</Id>
+        <Name>Parking de la Colle</Name>
         <Owner>MonacoParking</Owner>
-        <District>Le Rocher</District>
-        <SpacesCount>21</SpacesCount>
-        <Address>Address</Address>
+        <District>La Condamine</District>
+        <SpacesCount>491</SpacesCount>
+        <Address>25 Boulevard Charles III, 98000 Monaco</Address>
+        <Lat>43.7319852</Lat>
+        <Lng>7.417949799999974</Lng>
         <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>2</Id>
-        <Name>Parking de la Visitation</Name>
-        <Owner>MonacoParking</Owner>
-        <District>Le Rocher</District>
-        <SpacesCount>42</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>0</Echarge>
+        <Moto>1</Moto>
     </Parking>
     <Parking>
         <Id>41</Id>
         <Name>Parking de la Digue</Name>
         <Owner>MonacoParking</Owner>
         <District>Le Rocher</District>
-        <SpacesCount>267</SpacesCount>
-        <Address>Address</Address>
+        <SpacesCount>304</SpacesCount>
+        <Address>Digue de l&apos;Avant Port, 98000 Monaco</Address>
+        <Lat>43.7343839</Lat>
+        <Lng>7.4296970999999985</Lng>
         <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
+    </Parking>
+    <Parking>
+        <Id>3</Id>
+        <Name>Parking Larvotto</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Larvotto</District>
+        <SpacesCount>388</SpacesCount>
+        <Address>37 Avenue Princesse Grace, 98000 Monaco-Ville, Monaco</Address>
+        <Lat>43.747263</Lat>
+        <Lng>7.433635699999968</Lng>
+        <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
+    </Parking>
+    <Parking>
+        <Id>39</Id>
+        <Name>Parking des Agaves</Name>
+        <Owner>MonacoParking</Owner>
+        <District>La Condamine</District>
+        <SpacesCount>103</SpacesCount>
+        <Address>16 Rue Louis Aureglia, 98000 Monaco</Address>
+        <Lat>43.73533560000001</Lat>
+        <Lng>7.418276300000002</Lng>
+        <Description>Description</Description>
+        <Handi>0</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
+    </Parking>
+    <Parking>
+        <Id>38</Id>
+        <Name>Parking des Carmes</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Larvotto</District>
+        <SpacesCount>70</SpacesCount>
+        <Address>33 Boulevard du Larvotto, 98000 Monaco</Address>
+        <Lat>43.74433450000001</Lat>
+        <Lng>7.4301332</Lng>
+        <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
+    </Parking>
+    <Parking>
+        <Id>6</Id>
+        <Name>Parking Louis II</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Monte-Carlo</District>
+        <SpacesCount>121</SpacesCount>
+        <Address>35 Boulevard Louis II, 98000 Monaco</Address>
+        <Lat>43.7407244</Lat>
+        <Lng>7.430153399999995</Lng>
+        <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
     </Parking>
     <Parking>
         <Id>1</Id>
         <Name>Parking des Moulins</Name>
         <Owner>MonacoParking</Owner>
         <District>Monte-Carlo</District>
-        <SpacesCount>296</SpacesCount>
-        <Address>Address</Address>
+        <SpacesCount>308</SpacesCount>
+        <Address>37 Boulevard des Moulins, 98000 Monaco-Ville, Monaco</Address>
+        <Lat>43.74436559999999</Lat>
+        <Lng>7.428809600000022</Lng>
         <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>15</Id>
-        <Name>Parking Costa</Name>
-        <Owner>MonacoParking</Owner>
-        <District>Monte-Carlo</District>
-        <SpacesCount>187</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>22</Id>
-        <Name>Parking du Casino</Name>
-        <Owner>MonacoParking</Owner>
-        <District>Monte-Carlo</District>
-        <SpacesCount>662</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>26</Id>
-        <Name>Parking St-Charles</Name>
-        <Owner>MonacoParking</Owner>
-        <District>Monte-Carlo</District>
-        <SpacesCount>332</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>33</Id>
-        <Name>Parking St-Laurent</Name>
-        <Owner>MonacoParking</Owner>
-        <District>Monte-Carlo</District>
-        <SpacesCount>184</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
+        <Handi>0</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
     </Parking>
     <Parking>
         <Id>42</Id>
         <Name>Parking Ostende</Name>
         <Owner>MonacoParking</Owner>
         <District>Monte-Carlo</District>
-        <SpacesCount>148</SpacesCount>
-        <Address>Address</Address>
+        <SpacesCount>74</SpacesCount>
+        <Address>9 Avenue d'Ostende, 98000 Monaco</Address>
+        <Lat>43.7373164</Lat>
+        <Lng>7.423084099999983</Lng>
         <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
+    </Parking>
+    <Parking>
+        <Id>13</Id>
+        <Name>Parking Papalins</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Fontvieille</District>
+        <SpacesCount>336</SpacesCount>
+        <Address>4 Avenue des Papalins, 98000 Monaco</Address>
+        <Lat>43.7294342</Lat>
+        <Lng>7.417348500000003</Lng>
+        <Description>Description</Description>
+        <Handi>0</Handi>
+        <Echarge>0</Echarge>
+        <Moto>0</Moto>
+    </Parking>
+    <Parking>
+        <Id>12</Id>
+        <Name>Parking des Pecheurs</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Le Rocher</District>
+        <SpacesCount>508</SpacesCount>
+        <Address>Tunnel Pêcheurs, 98000 Monaco</Address>
+        <Lat>43.73163</Lat>
+        <Lng>7.427318</Lng>
+        <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
+    </Parking>
+    <Parking>
+        <Id>31</Id>
+        <Name>Parking de la Place d'Armes</Name>
+        <Owner>MonacoParking</Owner>
+        <District>La Condamine</District>
+        <SpacesCount>57</SpacesCount>
+        <Address>4 Rue Terrazzani, 98000 Monaco</Address>
+        <Lat>43.73241420000001</Lat>
+        <Lng>7.420389200000045</Lng>
+        <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>0</Echarge>
+        <Moto>1</Moto>
+    </Parking>
+    <Parking>
+        <Id>21</Id>
+        <Name>Parking du Port</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Fontvieille</District>
+        <SpacesCount>192</SpacesCount>
+        <Address>20 Quai Jean-Charles Rey, 98000 Monaco-Ville, Monaco</Address>
+        <Lat>43.7284478</Lat>
+        <Lng>7.41955269999994</Lng>
+        <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
+    </Parking>
+    <Parking>
+        <Id>32</Id>
+        <Name>Parking Quai Antoine 1er</Name>
+        <Owner>MonacoParking</Owner>
+        <District>La Condamine</District>
+        <SpacesCount>112</SpacesCount>
+        <Address>4 Quai Antoine 1er, 98000 Monaco-Ville, Monaco</Address>
+        <Lat>43.7325123</Lat>
+        <Lng>7.42401330000007</Lng>
+        <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
     </Parking>
     <Parking>
         <Id>44</Id>
         <Name>Parking de Roqueville</Name>
         <Owner>MonacoParking</Owner>
         <District>Monte-Carlo</District>
-        <SpacesCount>237</SpacesCount>
-        <Address>Address</Address>
+        <SpacesCount>268</SpacesCount>
+        <Address>Avenue de Roqueville, 98000 Monaco</Address>
+        <Lat>43.739121</Lat>
+        <Lng>7.422764</Lng>
         <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>6</Id>
-        <Name>Parking de Louis II</Name>
-        <Owner>MonacoParking</Owner>
-        <District>Monte-Carlo</District>
-        <SpacesCount>104</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>28</Id>
-        <Name>Parking de la 3</Name>
-        <Owner>MonacoParking</Owner>
-        <District>Condamine</District>
-        <SpacesCount>318</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>31</Id>
-        <Name>Parking Place d'Armes</Name>
-        <Owner>MonacoParking</Owner>
-        <District>Condamine</District>
-        <SpacesCount>53</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
-    </Parking>
-    <Parking>
-        <Id>32</Id>
-        <Name>Parking Quai Antoine 1er</Name>
-        <Owner>MonacoParking</Owner>
-        <District>Condamine</District>
-        <SpacesCount>227</SpacesCount>
-        <Address>Address</Address>
-        <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
     </Parking>
     <Parking>
         <Id>36</Id>
         <Name>Parking du Square Gastaud</Name>
         <Owner>MonacoParking</Owner>
-        <District>Condamine</District>
-        <SpacesCount>216</SpacesCount>
-        <Address>Address</Address>
+        <District>La Condamine</District>
+        <SpacesCount>244</SpacesCount>
+        <Address>7 Rue Suffen Raymond, 98000 Monaco</Address>
+        <Lat>43.73440529999999</Lat>
+        <Lng>7.419908299999975</Lng>
         <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
     </Parking>
     <Parking>
-        <Id>39</Id>
-        <Name>Parking des Agaves</Name>
+        <Id>52</Id>
+        <Name>Parking St-Antoine</Name>
         <Owner>MonacoParking</Owner>
-        <District>Condamine</District>
-        <SpacesCount>79</SpacesCount>
-        <Address>Address</Address>
+        <District>Fontvieille</District>
+        <SpacesCount>354</SpacesCount>
+        <Address>24 Avenue de Fontvieille, 98000 Monaco-Ville, Monaco</Address>
+        <Lat>43.73440529999999</Lat>
+        <Lng>7.419908299999975</Lng>
         <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>0</Echarge>
+        <Moto>0</Moto>
     </Parking>
     <Parking>
-        <Id>9</Id>
-        <Name>Parking de la Colle</Name>
+        <Id>26</Id>
+        <Name>Parking St-Charles</Name>
         <Owner>MonacoParking</Owner>
-        <District>Condamine</District>
-        <SpacesCount>432</SpacesCount>
-        <Address>Address</Address>
+        <District>Monte-Carlo</District>
+        <SpacesCount>380</SpacesCount>
+        <Address>5 Avenue Saint-Charles, 98000 Monaco-Ville, Monaco</Address>
+        <Lat>43.7422008</Lat>
+        <Lng>7.426954000000023</Lng>
         <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
+    </Parking>
+    <Parking>
+        <Id>33</Id>
+        <Name>Parking St-Laurent</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Monte-Carlo</District>
+        <SpacesCount>192</SpacesCount>
+        <Address>8 Avenue Saint-Laurent, 98000 Monaco</Address>
+        <Lat>43.7428542</Lat>
+        <Lng>7.427824699999974</Lng>
+        <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>0</Echarge>
+        <Moto>1</Moto>
+    </Parking>
+    <Parking>
+        <Id>25</Id>
+        <Name>Parking St-Nicolas</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Fontvieille</District>
+        <SpacesCount>106</SpacesCount>
+        <Address>7 Avenue des Guelfes, 98000 Monaco</Address>
+        <Lat>43.7428542</Lat>
+        <Lng>7.427824699999974</Lng>
+        <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
+    </Parking>
+    <Parking>
+        <Id>14</Id>
+        <Name>Parking du Stade</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Fontvieille</District>
+        <SpacesCount>965</SpacesCount>
+        <Address>17 Avenue des Castelans, 98000 Monaco</Address>
+        <Lat>43.72836789999999</Lat>
+        <Lng>7.416128599999979</Lng>
+        <Description>Description</Description>
+        <Handi>1</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
+    </Parking>
+    <Parking>
+        <Id>43</Id>
+        <Name>Parking de Testimonio</Name>
+        <Owner>MonacoParking</Owner>
+        <District>Larvotto</District>
+        <SpacesCount>85</SpacesCount>
+        <Address>22 Avenue Princesse Grâce, 98000 Monaco</Address>
+        <Lat>43.72836789999999</Lat>
+        <Lng>7.416128599999979</Lng>
+        <Description>Description</Description>
+        <Handi>0</Handi>
+        <Echarge>1</Echarge>
+        <Moto>1</Moto>
     </Parking>
 </Parkings>

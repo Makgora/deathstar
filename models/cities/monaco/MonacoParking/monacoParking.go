@@ -13,7 +13,7 @@ func InitMonacoParkings() {
 
 	// Add parkings
 	for _, d := range parkings.Parkings {
-		objects.NewParking(d.Id, d.Name, monacoParking, monaco.GetDistrict(d.District), monaco, d.SpacesCount)
+		objects.NewParking(d.Id, d.Name, d.Address, d.Lat, d.Lng, monacoParking, monaco.GetDistrict(d.District), monaco, d.SpacesCount)
 	}
 }
 
@@ -27,11 +27,13 @@ func UpdateMonacoParkings() {
 	for _, v := range s.Quartier {
 		for _, p := range v.Parc {
 			parkingToUpdate := monaco.GetParking(p.NumParc)
-
-			parkingToUpdate.SetFreeSpacesCount(p.PlacesLibresParc)
-			parkingToUpdate.SetOccSpacesCount(p.Presents.PresentsAbonnes + p.Presents.PresentsHoraires)
-			parkingToUpdate.SetSpacesCount(parkingToUpdate.GetOccSpacesCount() + parkingToUpdate.GetFreeSpacesCount())
-			parkingToUpdate.SetStatus(p.StatusParc)
+			if parkingToUpdate != nil {
+				parkingToUpdate.SetFreeSpacesCount(p.PlacesLibresParc)
+				parkingToUpdate.SetOccSpacesCount(p.Presents.PresentsAbonnes + p.Presents.PresentsHoraires)
+				parkingToUpdate.SetSpacesCount(parkingToUpdate.GetOccSpacesCount() + parkingToUpdate.GetFreeSpacesCount())
+				parkingToUpdate.SetStatus(p.StatusParc)
+			}
 		}
 	}
+
 }

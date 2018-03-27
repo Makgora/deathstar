@@ -17,9 +17,8 @@ func initSystem() {
 func updateSystem() {
 	go func() {
 		for {
-			//log.Println("Data Update")
 			cities.UpdateCities()
-			<-time.NewTimer(time.Second * 5).C
+			<-time.NewTimer(time.Second * 60).C
 		}
 	}()
 }

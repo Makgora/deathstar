@@ -1,8 +1,8 @@
 package main
 
 import (
-	_ "DeathStar/routers"
 	"DeathStar/models/system"
+	_ "DeathStar/routers"
 	"github.com/astaxie/beego"
 )
 

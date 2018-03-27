@@ -5,9 +5,9 @@ import (
 )
 
 type LiveDB struct {
-	cities    []City
-	owners    []Owner
-	users	  []User
+	cities []City
+	owners []Owner
+	users  []User
 }
 
 var liveDB *LiveDB
@@ -31,7 +31,7 @@ func (l *LiveDB) GetCities() *[]City {
 
 //TODO Optimize access
 func (l *LiveDB) GetCity(cityName string) *City {
-	for i, _:= range l.cities {
+	for i, _ := range l.cities {
 		if l.cities[i].name == cityName {
 			return &l.cities[i]
 		}
@@ -44,8 +44,8 @@ func (l *LiveDB) GetOwners() *[]Owner {
 }
 
 //TODO Optimize access
-func (l *LiveDB) GetOwner (ownerName string) *Owner {
-	for i, _:= range l.owners {
+func (l *LiveDB) GetOwner(ownerName string) *Owner {
+	for i, _ := range l.owners {
 		if l.owners[i].name == ownerName {
 			return &l.owners[i]
 		}
@@ -59,7 +59,7 @@ func (l *LiveDB) GetUsers() *[]User {
 
 //TODO Optimize access
 func (l *LiveDB) GetUser(userName string) *User {
-	for i, _:= range l.users {
+	for i, _ := range l.users {
 		if l.users[i].name == userName {
 			return &l.users[i]
 		}
