@@ -53,6 +53,7 @@ func dlParseXml() xmlStruct {
 
 	// Delete first line to avoid encoding error
 	xmlData = xmlData[44:]
+
 	// Replace 'Obsolete' by O to allow int conversion
 	xmlData = []byte(strings.Replace(string(xmlData), "Obsolete", "0", -1))
 

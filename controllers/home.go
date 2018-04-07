@@ -4,7 +4,6 @@ import (
 	"DeathStar/models/objects"
 	"github.com/astaxie/beego"
 	"strconv"
-	"time"
 )
 
 type HomeController struct {
@@ -27,6 +26,7 @@ type Location struct {
 //TODO Je dois copier mes modèles (parking par exemple) car je ne peux pas faire {{.parking.GetSpacesCount()}}
 func (c *HomeController) Get() {
 	c.TplName = "home.tpl"
+	c.Data["file"] = "home"
 
 	city := objects.GetLiveDB().GetCity("Monaco")
 
@@ -47,6 +47,6 @@ func getParkings(city *objects.City) *[]Parking {
 	return &parkings
 }
 
-func getLastUpdate(city *objects.City) int {
-	return int(time.Since(city.GetLastUpdate()).Seconds())
+func getLastUpdate(city *objects.City) string {
+	return city.GetLastUpdate().Format("15:04:05")
 }

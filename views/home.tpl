@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
-
+<head>
 {{template "base/head.tpl"}}
+    <link rel="stylesheet" href="static/css/home.css">
+</head>
 
 <body>
-
 {{template "base/navbar.tpl"}}
 
 <div class="container-fluid">
@@ -53,14 +54,11 @@
         <div class="d-none d-lg-block col-lg-6">
             <div id="map">
             <script>
-                //TODO V
                 var cityLocation = {lat: {{.cityLocation.Lat}}, lng: {{.cityLocation.Lng}}};
                 var beaches = [];
                 {{range .parkings}}
                         beaches.push(["{{.Name}}", {{.Location.Lat}}, {{.Location.Lng}}]);
                 {{end}}
-                console.log(beaches);
-                initMap()
             </script>
             </div>
         </div>
@@ -68,19 +66,27 @@
     <div class="row">
         <div class="col-12 col-lg-6">
             <label id="update" class="text-muted font-italic">
-                Updated {{.lastUpdate}} sec ago
+                Dernière mise à jour à {{.lastUpdate}}
             </label>
         </div>
     </div>
 </div>
 
+<div class="container-fluid">
+    <div class="row" style="background-color: red">
+        
+    </div>
+</div>
+
+{{template "base/newsletter.tpl"}}
+
 {{template "base/footer.tpl"}}
 
 {{template "base/scripts.tpl"}}
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVFpJA9GjD8dqEu0KHVwNjQTZ6XwrnCFQ&callback=initMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVFpJA9GjD8dqEu0KHVwNjQTZ6XwrnCFQ"></script>
 <script src="static/js/map.js"></script>
-
+<script src="static/js/home.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,27 @@
+@import "base.css";
+@import "footer.css";
+@import "newsletter.css";
+
+/* Map div on right */
+#map {
+    height: 500px;
+}
+
+/* Parkings div on left */
+#parkings {
+    overflow: auto;
+    height: 500px;
+}
+
+#update {
+    padding-left: 10px;
+}
+
+.parking {
+    height: auto;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-bottom: 5px;
+    margin-bottom: 9px;
+    box-shadow: 5px 5px 5px -5px #333;
+}

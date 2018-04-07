@@ -2,6 +2,7 @@ package cities
 
 import (
 	"DeathStar/models/cities/monaco"
+	"log"
 )
 
 func InitCities() {
@@ -9,5 +10,10 @@ func InitCities() {
 }
 
 func UpdateCities() {
+	defer func() {
+		if err := recover(); err != nil {
+			log.Println("Update failed:", err)
+		}
+	}()
 	monaco.UpdateMonaco()
 }

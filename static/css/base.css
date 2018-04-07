@@ -1,0 +1,5 @@
+/* Move body under navbar */
+body {
+    padding-top: 80px;
+    font-family: 'Source Sans Pro', sans-serif;
+}

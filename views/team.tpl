@@ -1,6 +1,10 @@
-<html>
 <!DOCTYPE html>
+<html>
+<head>
 {{template "base/head.tpl"}}
+    <link rel="stylesheet" href="static/team.css">
+</head>
+
 <body>
 {{template "base/navbar.tpl"}}
 
