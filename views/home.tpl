@@ -72,9 +72,20 @@
     </div>
 </div>
 
-<div class="container-fluid">
-    <div class="row" style="background-color: red">
-        
+<div class="container-fluid mgt">
+    <div class="row text-center">
+        <div id="streetViewTitle" class="col-12">
+            Se garer devient un jeu d'enfant !
+        </div>
+    </div>
+    <div class="row text-center">
+        <div id="streetViewDescription" class="col-12">
+            Parked vous aide à trouver la place de parking idéale pour vos déplacements.
+            Rapide, simple et gratuit !
+        </div>
+    </div>
+    <div class="row">
+        <img src="static/img/streetView.jpg">
     </div>
 </div>
 

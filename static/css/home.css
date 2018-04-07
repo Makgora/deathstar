@@ -25,3 +25,17 @@
     margin-bottom: 9px;
     box-shadow: 5px 5px 5px -5px #333;
 }
+
+#streetViewTitle {
+    font-family : Montserrat, sans-serif;
+    color : #3ebb9f;
+    font-size : 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#streetViewDescription {
+    color : #616161;
+    font-size : 16px;
+    text-align: center;
+}

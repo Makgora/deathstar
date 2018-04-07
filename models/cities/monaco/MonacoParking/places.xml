@@ -1,76 +1,76 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 	<Document>
-		<totalPresent>6399</totalPresent>
-		<totalLibre>3688</totalLibre>
-		<lastUpdate>sam., 07 avril 2018 16:20:01 +0100</lastUpdate>
+		<totalPresent>6346</totalPresent>
+		<totalLibre>3750</totalLibre>
+		<lastUpdate>sam., 07 avril 2018 16:46:01 +0100</lastUpdate>
 		<Quartier>
 			<nomQuartier>Fontvieille</nomQuartier>
-			<totalLibresQuartier>1586</totalLibresQuartier>
-			<totalPresentsQuartier>1311</totalPresentsQuartier>
-			<totalPresentsHorairesQuartier>783</totalPresentsHorairesQuartier>
-			<totalPresentsAbonnesQuartier>528</totalPresentsAbonnesQuartier>
+			<totalLibresQuartier>1569</totalLibresQuartier>
+			<totalPresentsQuartier>1336</totalPresentsQuartier>
+			<totalPresentsHorairesQuartier>798</totalPresentsHorairesQuartier>
+			<totalPresentsAbonnesQuartier>538</totalPresentsAbonnesQuartier>
 			<Parc>
 				<numParc>124</numParc>
 				<libelleParc>ECOLES RDC</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>45</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.515723</placesLibresUpdate>
+				<placesLibresParc>36</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.113426</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.579444</presentsUpdate>
-					<presentsTotal>23</presentsTotal>
-					<presentsAbonnes>5</presentsAbonnes>
-					<presentsHoraires>18</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.496119</presentsUpdate>
+					<presentsTotal>34</presentsTotal>
+					<presentsAbonnes>6</presentsAbonnes>
+					<presentsHoraires>28</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>13</numParc>
 				<libelleParc>PAPALINS</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>218</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.38779</placesLibresUpdate>
+				<placesLibresParc>202</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:19.965651</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.298275</presentsUpdate>
-					<presentsTotal>92</presentsTotal>
-					<presentsAbonnes>60</presentsAbonnes>
-					<presentsHoraires>32</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.540201</presentsUpdate>
+					<presentsTotal>110</presentsTotal>
+					<presentsAbonnes>63</presentsAbonnes>
+					<presentsHoraires>47</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>14</numParc>
 				<libelleParc>STADE</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>801</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.391829</placesLibresUpdate>
+				<placesLibresParc>806</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:19.975143</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.491548</presentsUpdate>
-					<presentsTotal>308</presentsTotal>
-					<presentsAbonnes>167</presentsAbonnes>
-					<presentsHoraires>141</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.408402</presentsUpdate>
+					<presentsTotal>309</presentsTotal>
+					<presentsAbonnes>171</presentsAbonnes>
+					<presentsHoraires>138</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>21</numParc>
 				<libelleParc>PORT</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>81</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.4118</placesLibresUpdate>
+				<placesLibresParc>74</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.009559</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.503623</presentsUpdate>
-					<presentsTotal>94</presentsTotal>
-					<presentsAbonnes>78</presentsAbonnes>
-					<presentsHoraires>16</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.420224</presentsUpdate>
+					<presentsTotal>95</presentsTotal>
+					<presentsAbonnes>77</presentsAbonnes>
+					<presentsHoraires>18</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>24</numParc>
 				<libelleParc>ECOLES</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>18</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.419769</placesLibresUpdate>
+				<placesLibresParc>20</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.017561</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.507574</presentsUpdate>
-					<presentsTotal>52</presentsTotal>
-					<presentsAbonnes>52</presentsAbonnes>
+					<presentsUpdate>2018-04-07 16:45:40.424267</presentsUpdate>
+					<presentsTotal>53</presentsTotal>
+					<presentsAbonnes>53</presentsAbonnes>
 					<presentsHoraires>0</presentsHoraires>
 				</presents>
 			</Parc>
@@ -78,84 +78,84 @@
 				<numParc>25</numParc>
 				<libelleParc>ST NICOLAS</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>61</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.423792</placesLibresUpdate>
+				<placesLibresParc>56</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.021538</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.511606</presentsUpdate>
-					<presentsTotal>32</presentsTotal>
-					<presentsAbonnes>16</presentsAbonnes>
-					<presentsHoraires>16</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.4282</presentsUpdate>
+					<presentsTotal>38</presentsTotal>
+					<presentsAbonnes>17</presentsAbonnes>
+					<presentsHoraires>21</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>29</numParc>
 				<libelleParc>HELIPORT</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>23</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.439751</placesLibresUpdate>
+				<placesLibresParc>28</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.037505</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.519482</presentsUpdate>
-					<presentsTotal>62</presentsTotal>
+					<presentsUpdate>2018-04-07 16:45:40.43624</presentsUpdate>
+					<presentsTotal>55</presentsTotal>
 					<presentsAbonnes>23</presentsAbonnes>
-					<presentsHoraires>39</presentsHoraires>
+					<presentsHoraires>32</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>30</numParc>
 				<libelleParc>C.C.F.</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>98</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.443795</placesLibresUpdate>
+				<placesLibresParc>123</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.041502</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.523507</presentsUpdate>
-					<presentsTotal>462</presentsTotal>
+					<presentsUpdate>2018-04-07 16:45:40.440224</presentsUpdate>
+					<presentsTotal>438</presentsTotal>
 					<presentsAbonnes>5</presentsAbonnes>
-					<presentsHoraires>457</presentsHoraires>
+					<presentsHoraires>433</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>52</numParc>
 				<libelleParc>ST ANTOINE</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>241</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.499681</placesLibresUpdate>
+				<placesLibresParc>224</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.097376</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.543572</presentsUpdate>
-					<presentsTotal>186</presentsTotal>
-					<presentsAbonnes>122</presentsAbonnes>
-					<presentsHoraires>64</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.460145</presentsUpdate>
+					<presentsTotal>204</presentsTotal>
+					<presentsAbonnes>123</presentsAbonnes>
+					<presentsHoraires>81</presentsHoraires>
 				</presents>
 			</Parc>
 		</Quartier>
 		<Quartier>
 			<nomQuartier>I-Cars</nomQuartier>
-			<totalLibresQuartier>33</totalLibresQuartier>
-			<totalPresentsQuartier>31</totalPresentsQuartier>
-			<totalPresentsHorairesQuartier>14</totalPresentsHorairesQuartier>
-			<totalPresentsAbonnesQuartier>17</totalPresentsAbonnesQuartier>
+			<totalLibresQuartier>36</totalLibresQuartier>
+			<totalPresentsQuartier>33</totalPresentsQuartier>
+			<totalPresentsHorairesQuartier>15</totalPresentsHorairesQuartier>
+			<totalPresentsAbonnesQuartier>18</totalPresentsAbonnesQuartier>
 			<Parc>
 				<numParc>104</numParc>
 				<libelleParc>GRIMALDI FORUM BUS</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>3</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.507743</placesLibresUpdate>
+				<placesLibresParc>4</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.1054</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.431748</presentsUpdate>
-					<presentsTotal>30</presentsTotal>
+					<presentsUpdate>2018-04-07 16:45:40.651759</presentsUpdate>
+					<presentsTotal>31</presentsTotal>
 					<presentsAbonnes>16</presentsAbonnes>
-					<presentsHoraires>14</presentsHoraires>
+					<presentsHoraires>15</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>112</numParc>
 				<libelleParc>PECHEURS BUS</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>30</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.511747</placesLibresUpdate>
+				<placesLibresParc>32</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.109433</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.563473</presentsUpdate>
-					<presentsTotal>1</presentsTotal>
-					<presentsAbonnes>1</presentsAbonnes>
+					<presentsUpdate>2018-04-07 16:45:40.480139</presentsUpdate>
+					<presentsTotal>2</presentsTotal>
+					<presentsAbonnes>2</presentsAbonnes>
 					<presentsHoraires>0</presentsHoraires>
 				</presents>
 			</Parc>
@@ -164,7 +164,7 @@
 				<libelleParc>REGULATION BUS</libelleParc>
 				<statusParc>LIBRE</statusParc>
 				<placesLibresParc>0</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.407756</placesLibresUpdate>
+				<placesLibresUpdate>2018-04-07 16:45:20.00516</placesLibresUpdate>
 				<presents>
 					<presentsUpdate>2010-04-16 09:17:37.639024</presentsUpdate>
 					<presentsTotal>0</presentsTotal>
@@ -175,21 +175,21 @@
 		</Quartier>
 		<Quartier>
 			<nomQuartier>Jardin-Exotique</nomQuartier>
-			<totalLibresQuartier>433</totalLibresQuartier>
-			<totalPresentsQuartier>1130</totalPresentsQuartier>
-			<totalPresentsHorairesQuartier>308</totalPresentsHorairesQuartier>
-			<totalPresentsAbonnesQuartier>822</totalPresentsAbonnesQuartier>
+			<totalLibresQuartier>441</totalLibresQuartier>
+			<totalPresentsQuartier>1128</totalPresentsQuartier>
+			<totalPresentsHorairesQuartier>299</totalPresentsHorairesQuartier>
+			<totalPresentsAbonnesQuartier>829</totalPresentsAbonnesQuartier>
 			<Parc>
 				<numParc>127</numParc>
 				<libelleParc>CHPG 2 (BAS)</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>110</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.51962</placesLibresUpdate>
+				<placesLibresParc>114</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.117401</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.443694</presentsUpdate>
-					<presentsTotal>160</presentsTotal>
+					<presentsUpdate>2018-04-07 16:45:40.663784</presentsUpdate>
+					<presentsTotal>154</presentsTotal>
 					<presentsAbonnes>0</presentsAbonnes>
-					<presentsHoraires>160</presentsHoraires>
+					<presentsHoraires>154</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
@@ -197,12 +197,12 @@
 				<libelleParc>JARDIN EXOTIQUE</libelleParc>
 				<statusParc>LIBRE</statusParc>
 				<placesLibresParc>57</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.399808</placesLibresUpdate>
+				<placesLibresUpdate>2018-04-07 16:45:19.989205</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.363907</presentsUpdate>
-					<presentsTotal>261</presentsTotal>
-					<presentsAbonnes>217</presentsAbonnes>
-					<presentsHoraires>44</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.5919</presentsUpdate>
+					<presentsTotal>257</presentsTotal>
+					<presentsAbonnes>212</presentsAbonnes>
+					<presentsHoraires>45</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
@@ -210,11 +210,11 @@
 				<libelleParc>CHPG 1 (HAUT)</libelleParc>
 				<statusParc>COMPLET</statusParc>
 				<placesLibresParc>0</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.431824</placesLibresUpdate>
+				<placesLibresUpdate>2018-04-07 16:45:20.029575</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.375921</presentsUpdate>
+					<presentsUpdate>2018-04-07 16:45:40.603931</presentsUpdate>
 					<presentsTotal>0</presentsTotal>
-					<presentsAbonnes>39</presentsAbonnes>
+					<presentsAbonnes>35</presentsAbonnes>
 					<presentsHoraires>0</presentsHoraires>
 				</presents>
 			</Parc>
@@ -222,13 +222,13 @@
 				<numParc>34</numParc>
 				<libelleParc>GARE</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>160</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.459811</placesLibresUpdate>
+				<placesLibresParc>164</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.057494</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.383834</presentsUpdate>
+					<presentsUpdate>2018-04-07 16:45:40.611846</presentsUpdate>
 					<presentsTotal>408</presentsTotal>
-					<presentsAbonnes>369</presentsAbonnes>
-					<presentsHoraires>39</presentsHoraires>
+					<presentsAbonnes>373</presentsAbonnes>
+					<presentsHoraires>35</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
@@ -236,11 +236,11 @@
 				<libelleParc>ATHENA</libelleParc>
 				<statusParc>COMPLET</statusParc>
 				<placesLibresParc>0</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.491758</placesLibresUpdate>
+				<placesLibresUpdate>2018-04-07 16:45:20.089409</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.41181</presentsUpdate>
+					<presentsUpdate>2018-04-07 16:45:40.639875</presentsUpdate>
 					<presentsTotal>0</presentsTotal>
-					<presentsAbonnes>13</presentsAbonnes>
+					<presentsAbonnes>14</presentsAbonnes>
 					<presentsHoraires>0</presentsHoraires>
 				</presents>
 			</Parc>
@@ -249,9 +249,9 @@
 				<libelleParc>DES OLIVIERS</libelleParc>
 				<statusParc>LIBRE</statusParc>
 				<placesLibresParc>27</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.495682</placesLibresUpdate>
+				<placesLibresUpdate>2018-04-07 16:45:20.09347</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.421822</presentsUpdate>
+					<presentsUpdate>2018-04-07 16:45:40.643766</presentsUpdate>
 					<presentsTotal>0</presentsTotal>
 					<presentsAbonnes>0</presentsAbonnes>
 					<presentsHoraires>0</presentsHoraires>
@@ -261,39 +261,39 @@
 				<numParc>60</numParc>
 				<libelleParc>ENGELIN</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>37</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.50373</placesLibresUpdate>
+				<placesLibresParc>33</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.101456</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.427803</presentsUpdate>
-					<presentsTotal>47</presentsTotal>
+					<presentsUpdate>2018-04-07 16:45:40.64784</presentsUpdate>
+					<presentsTotal>51</presentsTotal>
 					<presentsAbonnes>3</presentsAbonnes>
-					<presentsHoraires>44</presentsHoraires>
+					<presentsHoraires>48</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>7</numParc>
 				<libelleParc>BOSIO</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>32</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.371777</placesLibresUpdate>
+				<placesLibresParc>35</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:19.949697</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.342331</presentsUpdate>
-					<presentsTotal>227</presentsTotal>
-					<presentsAbonnes>209</presentsAbonnes>
-					<presentsHoraires>18</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.580018</presentsUpdate>
+					<presentsTotal>231</presentsTotal>
+					<presentsAbonnes>216</presentsAbonnes>
+					<presentsHoraires>15</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>8</numParc>
 				<libelleParc>PLATI</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>10</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.375829</placesLibresUpdate>
+				<placesLibresParc>11</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:19.953685</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.351934</presentsUpdate>
+					<presentsUpdate>2018-04-07 16:45:40.583918</presentsUpdate>
 					<presentsTotal>27</presentsTotal>
-					<presentsAbonnes>24</presentsAbonnes>
-					<presentsHoraires>3</presentsHoraires>
+					<presentsAbonnes>25</presentsAbonnes>
+					<presentsHoraires>2</presentsHoraires>
 				</presents>
 			</Parc>
 		</Quartier>
@@ -308,9 +308,9 @@
 				<libelleParc>ANNONCIADE</libelleParc>
 				<statusParc>LIBRE</statusParc>
 				<placesLibresParc>83</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.363805</placesLibresUpdate>
+				<placesLibresUpdate>2018-04-07 16:45:19.941795</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.334275</presentsUpdate>
+					<presentsUpdate>2018-04-07 16:45:40.572051</presentsUpdate>
 					<presentsTotal>43</presentsTotal>
 					<presentsAbonnes>36</presentsAbonnes>
 					<presentsHoraires>7</presentsHoraires>
@@ -319,21 +319,21 @@
 		</Quartier>
 		<Quartier>
 			<nomQuartier>Larvotto</nomQuartier>
-			<totalLibresQuartier>197</totalLibresQuartier>
-			<totalPresentsQuartier>919</totalPresentsQuartier>
-			<totalPresentsHorairesQuartier>595</totalPresentsHorairesQuartier>
-			<totalPresentsAbonnesQuartier>324</totalPresentsAbonnesQuartier>
+			<totalLibresQuartier>222</totalLibresQuartier>
+			<totalPresentsQuartier>884</totalPresentsQuartier>
+			<totalPresentsHorairesQuartier>569</totalPresentsHorairesQuartier>
+			<totalPresentsAbonnesQuartier>315</totalPresentsAbonnesQuartier>
 			<Parc>
 				<numParc>3</numParc>
 				<libelleParc>LARVOTTO</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>91</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.355804</placesLibresUpdate>
+				<placesLibresParc>87</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:19.933809</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.326251</presentsUpdate>
-					<presentsTotal>274</presentsTotal>
-					<presentsAbonnes>106</presentsAbonnes>
-					<presentsHoraires>168</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.56402</presentsUpdate>
+					<presentsTotal>272</presentsTotal>
+					<presentsAbonnes>102</presentsAbonnes>
+					<presentsHoraires>170</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
@@ -341,9 +341,9 @@
 				<libelleParc>LES CARMES</libelleParc>
 				<statusParc>LIBRE</statusParc>
 				<placesLibresParc>17</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.467787</placesLibresUpdate>
+				<placesLibresUpdate>2018-04-07 16:45:20.065436</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.391875</presentsUpdate>
+					<presentsUpdate>2018-04-07 16:45:40.619829</presentsUpdate>
 					<presentsTotal>36</presentsTotal>
 					<presentsAbonnes>28</presentsAbonnes>
 					<presentsHoraires>8</presentsHoraires>
@@ -353,59 +353,59 @@
 				<numParc>4</numParc>
 				<libelleParc>GRIMALDI FORUM</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>74</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.359853</placesLibresUpdate>
+				<placesLibresParc>99</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:19.937809</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.330191</presentsUpdate>
-					<presentsTotal>545</presentsTotal>
-					<presentsAbonnes>152</presentsAbonnes>
-					<presentsHoraires>393</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.567962</presentsUpdate>
+					<presentsTotal>516</presentsTotal>
+					<presentsAbonnes>147</presentsAbonnes>
+					<presentsHoraires>369</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>43</numParc>
 				<libelleParc>TESTIMONIO</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>15</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.483736</placesLibresUpdate>
+				<placesLibresParc>19</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.081375</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.403773</presentsUpdate>
-					<presentsTotal>64</presentsTotal>
+					<presentsUpdate>2018-04-07 16:45:40.63188</presentsUpdate>
+					<presentsTotal>60</presentsTotal>
 					<presentsAbonnes>38</presentsAbonnes>
-					<presentsHoraires>26</presentsHoraires>
+					<presentsHoraires>22</presentsHoraires>
 				</presents>
 			</Parc>
 		</Quartier>
 		<Quartier>
 			<nomQuartier>Le Rocher</nomQuartier>
-			<totalLibresQuartier>391</totalLibresQuartier>
-			<totalPresentsQuartier>517</totalPresentsQuartier>
-			<totalPresentsHorairesQuartier>278</totalPresentsHorairesQuartier>
-			<totalPresentsAbonnesQuartier>239</totalPresentsAbonnesQuartier>
+			<totalLibresQuartier>398</totalLibresQuartier>
+			<totalPresentsQuartier>515</totalPresentsQuartier>
+			<totalPresentsHorairesQuartier>275</totalPresentsHorairesQuartier>
+			<totalPresentsAbonnesQuartier>240</totalPresentsAbonnesQuartier>
 			<Parc>
 				<numParc>12</numParc>
 				<libelleParc>PECHEURS</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>213</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.383805</placesLibresUpdate>
+				<placesLibresParc>216</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:19.96167</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.487593</presentsUpdate>
-					<presentsTotal>285</presentsTotal>
-					<presentsAbonnes>90</presentsAbonnes>
-					<presentsHoraires>195</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.40427</presentsUpdate>
+					<presentsTotal>280</presentsTotal>
+					<presentsAbonnes>89</presentsAbonnes>
+					<presentsHoraires>191</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>17</numParc>
 				<libelleParc>ABBAYE</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>6</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.403787</placesLibresUpdate>
+				<placesLibresParc>8</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:19.998359</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.49549</presentsUpdate>
-					<presentsTotal>9</presentsTotal>
+					<presentsUpdate>2018-04-07 16:45:40.412231</presentsUpdate>
+					<presentsTotal>11</presentsTotal>
 					<presentsAbonnes>3</presentsAbonnes>
-					<presentsHoraires>6</presentsHoraires>
+					<presentsHoraires>8</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
@@ -413,109 +413,109 @@
 				<libelleParc>VISITATION</libelleParc>
 				<statusParc>LIBRE</statusParc>
 				<placesLibresParc>143</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.351629</placesLibresUpdate>
+				<placesLibresUpdate>2018-04-07 16:45:19.929811</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.471804</presentsUpdate>
-					<presentsTotal>6</presentsTotal>
+					<presentsUpdate>2018-04-07 16:45:40.388536</presentsUpdate>
+					<presentsTotal>7</presentsTotal>
 					<presentsAbonnes>4</presentsAbonnes>
-					<presentsHoraires>2</presentsHoraires>
+					<presentsHoraires>3</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>41</numParc>
 				<libelleParc>LA DIGUE</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>29</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.475809</placesLibresUpdate>
+				<placesLibresParc>31</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.073444</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.539464</presentsUpdate>
+					<presentsUpdate>2018-04-07 16:45:40.456155</presentsUpdate>
 					<presentsTotal>217</presentsTotal>
-					<presentsAbonnes>142</presentsAbonnes>
-					<presentsHoraires>75</presentsHoraires>
+					<presentsAbonnes>144</presentsAbonnes>
+					<presentsHoraires>73</presentsHoraires>
 				</presents>
 			</Parc>
 		</Quartier>
 		<Quartier>
 			<nomQuartier>Monte-Carlo</nomQuartier>
-			<totalLibresQuartier>449</totalLibresQuartier>
-			<totalPresentsQuartier>1577</totalPresentsQuartier>
-			<totalPresentsHorairesQuartier>727</totalPresentsHorairesQuartier>
-			<totalPresentsAbonnesQuartier>850</totalPresentsAbonnesQuartier>
+			<totalLibresQuartier>496</totalLibresQuartier>
+			<totalPresentsQuartier>1527</totalPresentsQuartier>
+			<totalPresentsHorairesQuartier>685</totalPresentsHorairesQuartier>
+			<totalPresentsAbonnesQuartier>842</totalPresentsAbonnesQuartier>
 			<Parc>
 				<numParc>1</numParc>
 				<libelleParc>MOULINS</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>50</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.350364</placesLibresUpdate>
+				<placesLibresParc>42</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:19.925978</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.322472</presentsUpdate>
-					<presentsTotal>208</presentsTotal>
-					<presentsAbonnes>151</presentsAbonnes>
-					<presentsHoraires>57</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.560173</presentsUpdate>
+					<presentsTotal>212</presentsTotal>
+					<presentsAbonnes>147</presentsAbonnes>
+					<presentsHoraires>65</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>15</numParc>
 				<libelleParc>COSTA</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>24</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.395858</placesLibresUpdate>
+				<placesLibresParc>20</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:19.98325</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.358233</presentsUpdate>
-					<presentsTotal>130</presentsTotal>
+					<presentsUpdate>2018-04-07 16:45:40.588051</presentsUpdate>
+					<presentsTotal>134</presentsTotal>
 					<presentsAbonnes>104</presentsAbonnes>
-					<presentsHoraires>26</presentsHoraires>
+					<presentsHoraires>30</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>22</numParc>
 				<libelleParc>CASINO</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>82</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.415745</placesLibresUpdate>
+				<placesLibresParc>113</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.013561</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.367948</presentsUpdate>
-					<presentsTotal>586</presentsTotal>
-					<presentsAbonnes>217</presentsAbonnes>
-					<presentsHoraires>369</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.595969</presentsUpdate>
+					<presentsTotal>548</presentsTotal>
+					<presentsAbonnes>216</presentsAbonnes>
+					<presentsHoraires>332</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>26</numParc>
 				<libelleParc>ST CHARLES</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>125</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.427859</placesLibresUpdate>
+				<placesLibresParc>130</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.025632</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.371931</presentsUpdate>
-					<presentsTotal>168</presentsTotal>
-					<presentsAbonnes>113</presentsAbonnes>
-					<presentsHoraires>55</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.599883</presentsUpdate>
+					<presentsTotal>159</presentsTotal>
+					<presentsAbonnes>110</presentsAbonnes>
+					<presentsHoraires>49</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>33</numParc>
 				<libelleParc>ST LAURENT</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>11</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.455711</placesLibresUpdate>
+				<placesLibresParc>25</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.053516</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.379896</presentsUpdate>
-					<presentsTotal>156</presentsTotal>
-					<presentsAbonnes>85</presentsAbonnes>
-					<presentsHoraires>71</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.607861</presentsUpdate>
+					<presentsTotal>155</presentsTotal>
+					<presentsAbonnes>86</presentsAbonnes>
+					<presentsHoraires>69</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>42</numParc>
 				<libelleParc>OSTENDE</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>76</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.479749</placesLibresUpdate>
+				<placesLibresParc>77</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.077496</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.399791</presentsUpdate>
-					<presentsTotal>79</presentsTotal>
-					<presentsAbonnes>31</presentsAbonnes>
+					<presentsUpdate>2018-04-07 16:45:40.627878</presentsUpdate>
+					<presentsTotal>78</presentsTotal>
+					<presentsAbonnes>30</presentsAbonnes>
 					<presentsHoraires>48</presentsHoraires>
 				</presents>
 			</Parc>
@@ -523,111 +523,111 @@
 				<numParc>44</numParc>
 				<libelleParc>ROQUEVILLE</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>69</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.487657</placesLibresUpdate>
+				<placesLibresParc>70</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.085471</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.407752</presentsUpdate>
-					<presentsTotal>152</presentsTotal>
-					<presentsAbonnes>132</presentsAbonnes>
-					<presentsHoraires>20</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.635851</presentsUpdate>
+					<presentsTotal>149</presentsTotal>
+					<presentsAbonnes>130</presentsAbonnes>
+					<presentsHoraires>19</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>6</numParc>
 				<libelleParc>LOUIS II</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>12</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.367784</placesLibresUpdate>
+				<placesLibresParc>19</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:19.945778</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.338236</presentsUpdate>
-					<presentsTotal>98</presentsTotal>
-					<presentsAbonnes>17</presentsAbonnes>
-					<presentsHoraires>81</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.575899</presentsUpdate>
+					<presentsTotal>92</presentsTotal>
+					<presentsAbonnes>19</presentsAbonnes>
+					<presentsHoraires>73</presentsHoraires>
 				</presents>
 			</Parc>
 		</Quartier>
 		<Quartier>
 			<nomQuartier>la Condamine</nomQuartier>
-			<totalLibresQuartier>516</totalLibresQuartier>
-			<totalPresentsQuartier>871</totalPresentsQuartier>
-			<totalPresentsHorairesQuartier>321</totalPresentsHorairesQuartier>
-			<totalPresentsAbonnesQuartier>550</totalPresentsAbonnesQuartier>
+			<totalLibresQuartier>505</totalLibresQuartier>
+			<totalPresentsQuartier>880</totalPresentsQuartier>
+			<totalPresentsHorairesQuartier>326</totalPresentsHorairesQuartier>
+			<totalPresentsAbonnesQuartier>554</totalPresentsAbonnesQuartier>
 			<Parc>
 				<numParc>28</numParc>
 				<libelleParc>CONDAMINE</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>141</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.435792</placesLibresUpdate>
+				<placesLibresParc>145</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.033573</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.515597</presentsUpdate>
-					<presentsTotal>223</presentsTotal>
-					<presentsAbonnes>165</presentsAbonnes>
-					<presentsHoraires>58</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.432197</presentsUpdate>
+					<presentsTotal>220</presentsTotal>
+					<presentsAbonnes>166</presentsAbonnes>
+					<presentsHoraires>54</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>31</numParc>
 				<libelleParc>PLACE D ARMES</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>20</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.447779</placesLibresUpdate>
+				<placesLibresParc>25</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.045563</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.527492</presentsUpdate>
-					<presentsTotal>40</presentsTotal>
+					<presentsUpdate>2018-04-07 16:45:40.444197</presentsUpdate>
+					<presentsTotal>34</presentsTotal>
 					<presentsAbonnes>0</presentsAbonnes>
-					<presentsHoraires>40</presentsHoraires>
+					<presentsHoraires>34</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>32</numParc>
 				<libelleParc>QUAI ANTOINE 1ER</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>132</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.451796</placesLibresUpdate>
+				<placesLibresParc>128</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.049582</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.53147</presentsUpdate>
-					<presentsTotal>128</presentsTotal>
-					<presentsAbonnes>42</presentsAbonnes>
-					<presentsHoraires>86</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.448155</presentsUpdate>
+					<presentsTotal>130</presentsTotal>
+					<presentsAbonnes>41</presentsAbonnes>
+					<presentsHoraires>89</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>36</numParc>
 				<libelleParc>SQUARE GASTAUD</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>97</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.463779</placesLibresUpdate>
+				<placesLibresParc>95</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.061479</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.535488</presentsUpdate>
-					<presentsTotal>134</presentsTotal>
-					<presentsAbonnes>98</presentsAbonnes>
-					<presentsHoraires>36</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.452208</presentsUpdate>
+					<presentsTotal>135</presentsTotal>
+					<presentsAbonnes>97</presentsAbonnes>
+					<presentsHoraires>38</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>39</numParc>
 				<libelleParc>LES AGAVES</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>27</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.471761</placesLibresUpdate>
+				<placesLibresParc>25</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:20.069515</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.395824</presentsUpdate>
-					<presentsTotal>52</presentsTotal>
+					<presentsUpdate>2018-04-07 16:45:40.623867</presentsUpdate>
+					<presentsTotal>54</presentsTotal>
 					<presentsAbonnes>47</presentsAbonnes>
-					<presentsHoraires>5</presentsHoraires>
+					<presentsHoraires>7</presentsHoraires>
 				</presents>
 			</Parc>
 			<Parc>
 				<numParc>9</numParc>
 				<libelleParc>LA COLLE</libelleParc>
 				<statusParc>LIBRE</statusParc>
-				<placesLibresParc>99</placesLibresParc>
-				<placesLibresUpdate>2018-04-07 16:17:51.379743</placesLibresUpdate>
+				<placesLibresParc>87</placesLibresParc>
+				<placesLibresUpdate>2018-04-07 16:45:19.957682</placesLibresUpdate>
 				<presents>
-					<presentsUpdate>2018-04-07 16:19:22.475645</presentsUpdate>
-					<presentsTotal>294</presentsTotal>
-					<presentsAbonnes>198</presentsAbonnes>
-					<presentsHoraires>96</presentsHoraires>
+					<presentsUpdate>2018-04-07 16:45:40.392395</presentsUpdate>
+					<presentsTotal>307</presentsTotal>
+					<presentsAbonnes>203</presentsAbonnes>
+					<presentsHoraires>104</presentsHoraires>
 				</presents>
 			</Parc>
 		</Quartier>
