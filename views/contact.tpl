@@ -2,7 +2,7 @@
 <html>
 <head>
 {{template "base/head.tpl"}}
-    <link rel="stylesheet" href="static/contact.css">
+    <link rel="stylesheet" href="static/css/contact.css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     </p>
 </div>
 
-<div class="container mgt">
+<div class="container mgt mgb">
     <div class="form-group row">
         <div class="col-md-2 offset-md-3 col-lg-2 offset-lg-3">
             <label for="name-input" class="col-form-label">Name</label>
@@ -41,7 +41,7 @@
         </div>
     </div>
     <div class="text-center">
-        <button type="button" class="btn btn-sm" style="margin-top: 20px">Submit</button>
+        <button type="button" class="btn btn-sm" style="margin-top: 20px" disabled>Submit</button>
     </div>
 </div>
 

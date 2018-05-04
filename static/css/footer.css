@@ -4,10 +4,6 @@
     font-size : 12px
 }
 
-.mgt {
-    margin-top: 20px;
-}
-
 /* Delete bullets in lists */
 ul {
     list-style-type: none;

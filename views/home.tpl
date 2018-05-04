@@ -74,18 +74,73 @@
 
 <div class="container-fluid mgt">
     <div class="row text-center">
-        <div id="streetViewTitle" class="col-12">
+        <h2 class="col-12">
             Se garer devient un jeu d'enfant !
-        </div>
-    </div>
-    <div class="row text-center">
-        <div id="streetViewDescription" class="col-12">
+        </h2>
+        <p class="col-12">
             Parked vous aide à trouver la place de parking idéale pour vos déplacements.
+            <br/>
             Rapide, simple et gratuit !
-        </div>
+        </p>
     </div>
     <div class="row">
         <img src="static/img/streetView.jpg">
+    </div>
+</div>
+
+<div id="how" class="container-fluid mgt">
+    <div class="row text-center">
+        <h2 class="col-12">
+            Garez-vous rapidement et simplement
+        </h2>
+        <p class="col-12">
+            Ne tournez plus dans les rues, une place vous attend !
+        </p>
+    </div>
+    <div class="row">
+        <div class="card-group col-10 offset-1">
+            <div class="card col-12 col-md-4">
+                <img class="card-img-top" src="static/img/Illu_01.jpg" alt="Trouvez votre parking">
+                <div class="card-body">
+                    <h3>
+                        Trouvez le parking idéal
+                    </h3>
+                    <p class="text-center">
+                        Parked vous recommande le parking disponible le plus adapté à votre destination.
+                        Partout dans Monaco, une place vous attend.
+                    </p>
+                </div>
+            </div>
+            <div class="card col-12 col-md-4">
+                <img class="card-img-top" src="static/img/Illu_02.jpg" alt="Préparer votre déplacement">
+                <div class="card-body">
+                    <h3>
+                        Préparez votre déplacement
+                    </h3>
+                    <p class="text-center">
+                        Trouvez toutes les informations utiles sur le parking sélectionné, ses tarifs et les services disponibles.
+                    </p>
+                </div>
+            </div>
+            <div class="card col-12 col-md-4">
+                <img class="card-img-top" src="static/img/Illu_03.jpg" alt="Garez vous !">
+                <div class="card-body">
+                    <h3>
+                        Garez-vous !
+                    </h3>
+                    <p class="text-center">
+                        Laissez-vous guider jusqu’à votre parking et garez-vous.
+                        Partez serein, votre voiture est en sécurité.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <a href="#" class="btn btn-secondary col-4 offset-4 mgb mgt" role="button">Reserver une place !</a>
     </div>
 </div>
 

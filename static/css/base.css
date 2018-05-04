@@ -3,3 +3,11 @@ body {
     padding-top: 80px;
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+.mgt {
+    margin-top: 20px;
+}
+
+.mgb {
+    margin-bottom: 100px;
+}
